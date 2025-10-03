@@ -1,191 +1,185 @@
-# 🤖 Text2SQL with Claude AI
+# Text2SQL with Claude AI
 
-A powerful Natural Language to SQL query system powered by **Claude (Anthropic)** AI models. Convert plain English questions into precise SQL queries with support for SQLite, PostgreSQL, Snowflake, Databricks, and more.
+Natural language to SQL query system powered by Anthropic's Claude. Ask questions in plain English and get executable SQL queries instantly.
 
-## ✨ Features
+![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Claude](https://img.shields.io/badge/Claude-3.0-orange.svg)
 
-- **🎯 Smart Query Processing**: Three processing modes
-  - Pattern Matching (instant responses for common queries)
-  - AI-Powered SQL Generation (Claude-powered intelligent query creation)
-  - AutoGen Multi-Agent System (complex analytical queries)
+## Overview
 
-- **🤖 Claude AI Integration**: Primary LLM provider using Anthropic's Claude models
-  - Claude 3 Haiku for fast, cost-effective queries
-  - Claude 3 Sonnet/Opus for complex analytical tasks
-  - Supports fallback to OpenAI if needed
+This application transforms natural language questions into SQL queries using Claude AI. It features intelligent query processing, multi-database support, and an intuitive web interface.
 
-- **📊 Multi-Database Support**:
-  - SQLite (default, perfect for testing)
-  - PostgreSQL
-  - Snowflake
-  - Databricks
-  - T-SQL/SQL Server
+**Key Capabilities:**
+- Pattern matching for instant common queries
+- AI-powered SQL generation for complex questions
+- Multi-agent system for analytical workloads
+- Support for SQLite, PostgreSQL, Snowflake, Databricks, and SQL Server
 
-- **🔍 Vector Search**: ChromaDB integration for semantic schema search
-
-- **📈 MLflow Integration**: Track query performance and model usage
-
-- **🎨 Beautiful Streamlit UI**: Interactive web interface
-
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
-- Python 3.10+
-- Claude API key from [Anthropic Console](https://console.anthropic.com/)
-- (Optional) OpenAI API key for embeddings
+- Python 3.10 or higher
+- Anthropic API key ([Get one here](https://console.anthropic.com/))
 
 ### Installation
 
-\`\`\`bash
+```bash
 # Clone the repository
-git clone <your-repo-url>
-cd dstoolkit-text2sql-and-imageprocessing
+git clone https://github.com/heyahmedsherif/text2sql-adventureworks-sales.git
+cd text2sql-adventureworks-sales
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Configure environment variables
+# Configure environment
 cp text_2_sql/.env.example text_2_sql/.env
-\`\`\`
+# Edit text_2_sql/.env and add your ANTHROPIC_API_KEY
+```
 
-### Configuration
+### Run Locally
 
-Edit \`text_2_sql/.env\`:
+```bash
+streamlit run unified_text2sql_streamlit.py
+```
 
-\`\`\`bash
-# === LLM Provider ===
-LLM_PROVIDER=claude  # Use Claude as primary LLM
+Open http://localhost:8501 in your browser.
 
-# === CLAUDE (ANTHROPIC) API CONFIGURATION ===
-ANTHROPIC_API_KEY=your-claude-api-key-here
+### Deploy to Streamlit Cloud
 
-# Claude Models
-CLAUDE_MODEL=claude-3-haiku-20240307  # Main model
-CLAUDE_MINI_MODEL=claude-3-haiku-20240307  # Fast model
+See [deployment guide](docs/STREAMLIT_CLOUD_DEPLOYMENT.md) for step-by-step instructions.
 
-# === OPENAI API (Optional - for embeddings only) ===
-OPENAI_API_KEY=sk-placeholder  # Only needed for vector embeddings
+## Example Usage
 
-# === Database Configuration ===
-Text2Sql__DatabaseEngine=SQLITE
-Text2Sql__Sqlite__Database=./data/your-database.db
-\`\`\`
+```
+Q: "How many customers do we have?"
+→ SELECT COUNT(*) FROM Customer
 
-### Run the Application
+Q: "Show top 10 products by revenue"
+→ SELECT ProductName, SUM(Revenue) FROM Products GROUP BY ProductName ORDER BY Revenue DESC LIMIT 10
 
-\`\`\`bash
-streamlit run unified_text2sql_streamlit.py --server.port 8501
-\`\`\`
+Q: "What are our total sales this year?"
+→ SELECT SUM(TotalDue) FROM SalesOrderHeader WHERE YEAR(OrderDate) = YEAR(GETDATE())
+```
 
-Visit http://localhost:8501 in your browser!
+## Features
 
-## 📖 Documentation
+### Three Processing Modes
 
-- [Claude Setup Guide](docs/guides/CLAUDE_SETUP_GUIDE.md) - Detailed Claude configuration
-- [Quick Start Guide](docs/guides/QUICK_START_OPEN_SOURCE.md) - Get started in 5 minutes
-- [Streamlit Cloud Deployment](docs/STREAMLIT_CLOUD_DEPLOYMENT.md) - Deploy to Streamlit Cloud
-- [Pattern Matching Guide](docs/guides/PATTERN_MATCHING_GUIDE.md) - Fast query patterns
-- [MLflow MLOps Guide](docs/guides/MLFLOW_MLOPS_README.md) - Track and optimize queries
+**Pattern Matching**
+Instant responses for common queries using predefined templates.
 
-## 🎯 Example Queries
+**AI-Powered**
+Claude generates SQL for complex questions with context awareness.
 
-Try these with the AdventureWorks sample database:
+**Multi-Agent (AutoGen)**
+Collaborative agents handle sophisticated analytical queries.
 
-\`\`\`
-"How many customers do we have?"
-"Show me the top 10 products by revenue"
-"What are our total sales this year?"
-"List customers who haven't ordered in 30 days"
-\`\`\`
+### Database Support
 
-## 🏗️ Project Structure
+| Database | Status | Notes |
+|----------|--------|-------|
+| SQLite | ✅ Default | Ideal for development |
+| PostgreSQL | ✅ Supported | Production ready |
+| Snowflake | ✅ Supported | Data warehouse |
+| Databricks | ✅ Supported | Lakehouse platform |
+| SQL Server | ✅ Supported | Enterprise databases |
 
-\`\`\`
-dstoolkit-text2sql-and-imageprocessing/
-├── unified_text2sql_streamlit.py    # Main Streamlit app
-├── text_2_sql/                      # Core Text2SQL engine
-│   ├── text_2_sql_core/            # Database connectors & logic
-│   └── autogen/                     # Multi-agent system
-├── data/                            # Sample databases
-├── docs/                            # Documentation
-│   ├── guides/                      # Setup & usage guides
-│   └── legacy/                      # Azure deployment docs (legacy)
-├── tests/                           # Test files
-└── requirements.txt                 # Python dependencies
-\`\`\`
+### Additional Features
 
-## 🔧 Configuration Options
+- **Vector Search**: Semantic schema matching with ChromaDB
+- **MLflow Integration**: Track query performance and metrics
+- **Query Caching**: Reduce API calls and improve response times
+- **Interactive UI**: Clean Streamlit interface with query history
 
-### LLM Providers
+## Configuration
 
-**Claude (Recommended)**:
-\`\`\`bash
+### Basic Setup
+
+Edit `text_2_sql/.env`:
+
+```bash
+# LLM Configuration
 LLM_PROVIDER=claude
-ANTHROPIC_API_KEY=sk-ant-api03-xxxxx
+ANTHROPIC_API_KEY=your-api-key-here
 CLAUDE_MODEL=claude-3-haiku-20240307
-\`\`\`
 
-**OpenAI (Alternative)**:
-\`\`\`bash
-LLM_PROVIDER=openai
-OPENAI_API_KEY=sk-xxxxx
-\`\`\`
+# Database
+Text2Sql__DatabaseEngine=SQLITE
+Text2Sql__Sqlite__Database=./data/AdventureWorks-sqlite.db
+```
 
-### Database Engines
+### Advanced Options
 
-Set \`Text2Sql__DatabaseEngine\` to one of:
-- \`SQLITE\` - Local SQLite database (default)
-- \`POSTGRES\` - PostgreSQL
-- \`SNOWFLAKE\` - Snowflake Data Warehouse
-- \`DATABRICKS\` - Databricks SQL
-- \`TSQL\` - Microsoft SQL Server
+See [configuration guide](docs/guides/CLAUDE_SETUP_GUIDE.md) for:
+- Custom model selection
+- Database connection strings
+- Performance tuning
+- Vector store configuration
 
-## 💡 Why Claude?
+## Project Structure
 
-- **✅ Superior reasoning** - Excellent for complex SQL generation
-- **✅ Longer context** - 200K tokens vs OpenAI's 128K
-- **✅ Better instruction following** - More accurate query generation
-- **✅ Cost-effective** - Haiku model is fast and affordable
+```
+text2sql-adventureworks-sales/
+├── unified_text2sql_streamlit.py   # Main application
+├── mlflow_tracking.py              # Experiment tracking
+├── text_2_sql/                     # Core engine
+│   ├── text_2_sql_core/           # Database connectors
+│   └── autogen/                    # Multi-agent system
+├── data/                           # Sample databases
+├── docs/                           # Documentation
+└── requirements.txt                # Dependencies
+```
 
-## 🔐 API Keys
+## Documentation
 
-### Get Your Claude API Key
+- [Quick Start Guide](docs/guides/QUICK_START_OPEN_SOURCE.md)
+- [Streamlit Cloud Deployment](docs/STREAMLIT_CLOUD_DEPLOYMENT.md)
+- [Pattern Matching](docs/guides/PATTERN_MATCHING_GUIDE.md)
+- [MLflow Integration](docs/guides/MLFLOW_MLOPS_README.md)
 
-1. Visit [Anthropic Console](https://console.anthropic.com/)
-2. Sign up or log in
-3. Navigate to API Keys
-4. Create a new key
-5. Copy and paste into \`.env\` file
+## Why Claude?
 
-### Rate Limits
+Claude offers significant advantages for SQL generation:
 
-**Claude Free Tier**:
+- **Advanced reasoning** for complex query logic
+- **200K token context** for large database schemas
+- **Accurate instruction following** reduces errors
+- **Cost-effective** with the Haiku model
+
+## API Rate Limits
+
+**Free Tier:**
 - 5 requests/minute
 - 25,000 tokens/day
 
-**Paid Tier**: Significantly higher limits
+**Paid Tier:**
+- Higher limits available
+- See [Anthropic pricing](https://www.anthropic.com/pricing)
 
-## 🤝 Contributing
+## Contributing
 
-See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
+Contributions are welcome! Please read [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-- **Anthropic** for Claude AI models
-- **Microsoft** for the original Text2SQL framework
-- **Streamlit** for the amazing UI framework
+Built with:
+- [Anthropic Claude](https://www.anthropic.com/) - AI model
+- [Streamlit](https://streamlit.io/) - Web framework
+- [ChromaDB](https://www.trychroma.com/) - Vector database
+- [MLflow](https://mlflow.org/) - Experiment tracking
 
-## 📞 Support
+## Support
 
 - 📖 [Documentation](docs/guides/)
-- 🐛 Report Issues
-- 💬 Discussions
+- 🐛 [Report Issues](https://github.com/heyahmedsherif/text2sql-adventureworks-sales/issues)
+- 💬 [Discussions](https://github.com/heyahmedsherif/text2sql-adventureworks-sales/discussions)
 
 ---
 
-**Built with ❤️ using Claude AI**
+**Made with Claude AI**
