@@ -49,10 +49,15 @@ class ConnectorFactory:
     @staticmethod
     def get_ai_search_connector():
         # Return ChromaDB connector (replaces Azure AI Search)
-        # Return None if AI Search is disabled
+        # Return None if AI Search is disabled or fails to initialize
         if os.environ.get("Text2Sql__UseAISearch", "True").lower() != "true":
             return None
-        return ChromaSearchConnector()
+        try:
+            return ChromaSearchConnector()
+        except Exception as e:
+            import logging
+            logging.warning(f"Failed to initialize ChromaDB connector: {e}. Vector search will be disabled.")
+            return None
 
     @staticmethod
     def get_open_ai_connector():
