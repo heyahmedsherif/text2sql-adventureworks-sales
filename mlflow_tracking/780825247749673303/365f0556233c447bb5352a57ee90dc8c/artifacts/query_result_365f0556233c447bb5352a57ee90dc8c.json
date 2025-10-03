@@ -1,0 +1,15 @@
+{
+  "question": "What is our total loan portfolio value?",
+  "approach": "AI-Powered",
+  "execution_time": 0.749763011932373,
+  "timestamp": "2025-10-03T13:18:59.576096",
+  "result": {
+    "method": "AI-Powered",
+    "sql_query": null,
+    "results": null,
+    "success": false,
+    "error": "Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-place**********************only. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+    "processing_time": 0.749763011932373,
+    "question": "What is our total loan portfolio value?"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "question": "What is the total loan by customer? Only show the top 3",
+  "approach": "AI-Powered",
+  "execution_time": 2.372542381286621,
+  "timestamp": "2025-08-19T16:36:52.040218",
+  "result": {
+    "method": "AI-Powered",
+    "sql_query": "SELECT \n    C.CUSTOMER_NAME, \n    SUM(CL.CURRENT_PRINCIPAL_BALANCE) AS TOTAL_LOAN\nFROM \n    CUSTOMER_DIMENSION C\nJOIN \n    CL_DETAIL_FACT CL ON C.CUSTOMER_KEY = CL.CUSTOMER_KEY\nWHERE \n    CL.CURRENT_PRINCIPAL_BALANCE > 0\nGROUP BY \n    C.CUSTOMER_NAME\nORDER BY \n    TOTAL_LOAN DESC\nLIMIT 3;",
+    "results": [
+      {
+        "CUSTOMER_NAME": "BORROWER 1",
+        "TOTAL_LOAN": 10062500000.0
+      },
+      {
+        "CUSTOMER_NAME": "R2D2 LLC",
+        "TOTAL_LOAN": 8372496537.7
+      },
+      {
+        "CUSTOMER_NAME": "PS CUSTOMER 1",
+        "TOTAL_LOAN": 4913723117.53
+      }
+    ],
+    "success": true,
+    "explanation": "AI-generated SQL for: 'What is the total loan by customer? Only show the top 3'",
+    "processing_time": 2.372542381286621,
+    "question": "What is the total loan by customer? Only show the top 3"
+  }
+}

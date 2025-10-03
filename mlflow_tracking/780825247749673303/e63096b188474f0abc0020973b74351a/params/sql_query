@@ -1,0 +1,2 @@
+SELECT SUM(TotalDue) AS TotalPortfolioSize
+FROM SalesOrderHeader;

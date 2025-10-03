@@ -1,0 +1,16 @@
+{
+  "question": "Analyze the correlation between credit review risk ratings and loan portfolio description concentration",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 5.180611848831177,
+  "timestamp": "2025-08-19T22:05:14.647601",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "answer": "payload_type=<PayloadType.DISAMBIGUATION_REQUESTS: 'disambiguation_requests'> payload_source=<PayloadSource.ASSISTANT: 'assistant'> body=Body(disambiguation_requests=[DismabiguationRequest(assistant_question='Could you clarify what specific metrics or values you would like to analyze for the correlation between credit review risk ratings and loan portfolio description concentration? For example, are you looking for averages, counts, or specific risk rating categories?', user_choices=[])], steps=[['Analyze the correlation between credit review risk ratings and loan portfolio description concentration.']])",
+    "sql_query": null,
+    "results": null,
+    "success": true,
+    "explanation": "AutoGen processing completed",
+    "processing_time": 5.180611848831177,
+    "question": "Analyze the correlation between credit review risk ratings and loan portfolio description concentration"
+  }
+}

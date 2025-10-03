@@ -1,0 +1,13 @@
+{
+  "question": "Identify customers showing any signs of potential risk",
+  "approach": "Fallback",
+  "execution_time": 0.000431060791015625,
+  "timestamp": "2025-08-19T14:12:25.166849",
+  "result": {
+    "method": "Fallback",
+    "success": false,
+    "error": "No suitable processing method available for mode: Pattern Match",
+    "processing_time": 0.000431060791015625,
+    "question": "Identify customers showing any signs of potential risk"
+  }
+}

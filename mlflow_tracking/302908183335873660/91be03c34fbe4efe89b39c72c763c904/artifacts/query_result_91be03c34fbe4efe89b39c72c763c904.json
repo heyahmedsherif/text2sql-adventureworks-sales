@@ -1,0 +1,18 @@
+{
+  "question": "provide loan amounts by the categories that are included such as Low, Medium, and High.",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 6.0791449546813965,
+  "timestamp": "2025-08-19T23:02:12.109292",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "response_type": "disambiguation",
+    "clarification_questions": [
+      "Could you clarify how you would like to categorize the loan amounts into Low, Medium, and High? For example, what specific ranges or criteria should be used for each category?"
+    ],
+    "user_choices": [],
+    "success": true,
+    "explanation": "AutoGen is requesting clarification to provide better analysis",
+    "processing_time": 6.0791449546813965,
+    "question": "provide loan amounts by the categories that are included such as Low, Medium, and High."
+  }
+}

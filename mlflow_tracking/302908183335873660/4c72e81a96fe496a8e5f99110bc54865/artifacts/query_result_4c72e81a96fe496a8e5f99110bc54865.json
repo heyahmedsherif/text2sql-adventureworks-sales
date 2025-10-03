@@ -1,0 +1,898 @@
+{
+  "question": "Analyze customer risk assessment trends and identify concerning patterns.  Please specify by specific risk ratings for all customer types.",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 43.70229887962341,
+  "timestamp": "2025-08-19T23:15:28.577562",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "response_type": "answer",
+    "answer": "The analysis of customer risk assessment trends reveals the following concerning patterns based on specific risk ratings for various customer types. The data indicates the frequency of risk ratings assigned by line officers across different customer types. Here are the top findings:\n\n| Customer Type                  | Line Officer Risk Rating | Risk Count |\n|--------------------------------|-------------------------|------------|\n| CORPORATION                    | 02                      | 1146       |\n| CORPORATION                    | 01                      | 762        |\n| CORPORATION                    | 10                      | 640        |\n| DOMESTIC COMMERCIAL BANK       | 04                      | 208        |\n| CORPORATION                    | 03                      | 205        |\n| CORPORATION                    | NULL                    | 196        |\n| CORPORATION                    | 04                      | 182        |\n| CORPORATION                    | 11                      | 120        |\n| INDIVIDUAL                     | NULL                    | 105        |\n| INDIVIDUAL                     | 01                      | 99         |\n| DOMESTIC COMMERCIAL BANK       | 02                      | 79         |\n| DOMESTIC COMMERCIAL BANK       | 10                      | 59         |\n| AGENCY                         | 10                      | 40         |\n| DOMESTIC COMMERCIAL BANK       | 11                      | 40         |\n| LOCAL BANK                     | 10                      | 40         |\n| DOMESTIC COMMERCIAL BANK       | 01                      | 36         |\n| INDIVIDUAL                     | 02                      | 35         |\n| LIMITED LIABILITY COMPANY       | 01                      | 29         |\n| CORPORATION                    | 05                      | 25         |\n| LIMITED LIABILITY COMPANY       | 03                      | 25         |\n\n### Key Observations:\n- The **Corporation** customer type has the highest risk counts across multiple risk ratings, particularly with a rating of **02**.\n- **Domestic Commercial Banks** also show significant risk counts, especially with ratings **04** and **02**.\n- **Individuals** have notable counts as well, particularly with ratings **01** and **02**.\n\nThese trends suggest that Corporations and Domestic Commercial Banks may require closer monitoring due to their higher risk ratings. Further investigation into the reasons behind these ratings could provide insights into potential risk factors affecting these customer types.",
+    "sql_query": "SELECT CUSTOMER_TYPE_DESCRIPTION, LINE_OFFICER_RISK_RATING_CODE, CREDIT_REVIEW_RISK_RATING_CODE, REGULATOR_RISK_RATING_CODE, COUNT(*) AS RISK_COUNT FROM CUSTOMER_DIMENSION GROUP BY CUSTOMER_TYPE_DESCRIPTION, LINE_OFFICER_RISK_RATING_CODE, CREDIT_REVIEW_RISK_RATING_CODE, REGULATOR_RISK_RATING_CODE ORDER BY RISK_COUNT DESC LIMIT 100",
+    "results": [
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "02",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 1146
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "01",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 762
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "10",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 640
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "DOMESTIC COMMERCIAL BANK",
+        "LINE_OFFICER_RISK_RATING_CODE": "04",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 208
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "03",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 205
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+        "LINE_OFFICER_RISK_RATING_CODE": null,
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 196
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "04",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 182
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "11",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 120
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "INDIVIDUAL",
+        "LINE_OFFICER_RISK_RATING_CODE": null,
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 105
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "INDIVIDUAL",
+        "LINE_OFFICER_RISK_RATING_CODE": "01",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 99
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "DOMESTIC COMMERCIAL BANK",
+        "LINE_OFFICER_RISK_RATING_CODE": "02",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 79
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "DOMESTIC COMMERCIAL BANK",
+        "LINE_OFFICER_RISK_RATING_CODE": "10",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 59
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "AGENCY",
+        "LINE_OFFICER_RISK_RATING_CODE": "10",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 40
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "DOMESTIC COMMERCIAL BANK",
+        "LINE_OFFICER_RISK_RATING_CODE": "11",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 40
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "LOCAL BANK",
+        "LINE_OFFICER_RISK_RATING_CODE": "10",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 40
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "DOMESTIC COMMERCIAL BANK",
+        "LINE_OFFICER_RISK_RATING_CODE": "01",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 36
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "INDIVIDUAL",
+        "LINE_OFFICER_RISK_RATING_CODE": "02",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 35
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "LIMITED LIABILITY COMANY",
+        "LINE_OFFICER_RISK_RATING_CODE": "01",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 29
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "05",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 25
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "LIMITED LIABILITY COMANY",
+        "LINE_OFFICER_RISK_RATING_CODE": "03",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 25
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "NON INDIVIDUAL",
+        "LINE_OFFICER_RISK_RATING_CODE": null,
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 24
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "14",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 20
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "GENERAL PARTNERSHIP",
+        "LINE_OFFICER_RISK_RATING_CODE": "02",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 20
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "LIMITED PARTNERSHIP",
+        "LINE_OFFICER_RISK_RATING_CODE": "02",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 20
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "SPECIAL PURPOSE COMPANY",
+        "LINE_OFFICER_RISK_RATING_CODE": "10",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 20
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "INDIVIDUAL",
+        "LINE_OFFICER_RISK_RATING_CODE": "03",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 15
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "INDIVIDUAL",
+        "LINE_OFFICER_RISK_RATING_CODE": "04",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 15
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "LIMITED PARTNERSHIP",
+        "LINE_OFFICER_RISK_RATING_CODE": "01",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 15
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "NON INDIVIDUAL",
+        "LINE_OFFICER_RISK_RATING_CODE": "05",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 15
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "INDIVIDUAL",
+        "LINE_OFFICER_RISK_RATING_CODE": "05",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 13
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "LIMITED PARTNERSHIP",
+        "LINE_OFFICER_RISK_RATING_CODE": null,
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 13
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "DOMESTIC COMMERCIAL BANK",
+        "LINE_OFFICER_RISK_RATING_CODE": "05",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 11
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "NATIONAL GOVERNMENT",
+        "LINE_OFFICER_RISK_RATING_CODE": "02",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 11
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "AGENCY",
+        "LINE_OFFICER_RISK_RATING_CODE": "03",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 10
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CHARITABLE ORGANIZATION",
+        "LINE_OFFICER_RISK_RATING_CODE": null,
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 10
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CHARITABLE ORGANIZATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "02",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 10
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "07",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 10
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "15",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 10
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "GENERAL PARTNERSHIP",
+        "LINE_OFFICER_RISK_RATING_CODE": "03",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 10
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "GENERAL PARTNERSHIP",
+        "LINE_OFFICER_RISK_RATING_CODE": "04",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 10
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "GENERAL PARTNERSHIP",
+        "LINE_OFFICER_RISK_RATING_CODE": "05",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 10
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "NATIONAL GOVERNMENT",
+        "LINE_OFFICER_RISK_RATING_CODE": "11",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 10
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "STATE/LOCAL GOVERNMENT",
+        "LINE_OFFICER_RISK_RATING_CODE": "01",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 10
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "TREASURY DEPARTMENT",
+        "LINE_OFFICER_RISK_RATING_CODE": "01",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 10
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "TREASURY DEPARTMENT",
+        "LINE_OFFICER_RISK_RATING_CODE": "10",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 10
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "DOMESTIC COMMERCIAL BANK",
+        "LINE_OFFICER_RISK_RATING_CODE": null,
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 7
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CHARITABLE ORGANIZATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "01",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 6
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "GENERAL PARTNERSHIP",
+        "LINE_OFFICER_RISK_RATING_CODE": null,
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 5
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "LIMITED LIABILITY COMANY",
+        "LINE_OFFICER_RISK_RATING_CODE": "12",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 5
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "12",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 4
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "LIMITED LIABILITY COMANY",
+        "LINE_OFFICER_RISK_RATING_CODE": "04",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 4
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CHARITABLE ORGANIZATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "04",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 3
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "INSTITUTIONAL TRUST",
+        "LINE_OFFICER_RISK_RATING_CODE": null,
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 2
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "STATE/LOCAL GOVERNMENT",
+        "LINE_OFFICER_RISK_RATING_CODE": "02",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 2
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": null,
+        "LINE_OFFICER_RISK_RATING_CODE": null,
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 1
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "CHARITABLE ORGANIZATION",
+        "LINE_OFFICER_RISK_RATING_CODE": "05",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 1
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "GROUP/ET AL CUSTOMER",
+        "LINE_OFFICER_RISK_RATING_CODE": "03",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 1
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "INSTITUTIONAL TRUST",
+        "LINE_OFFICER_RISK_RATING_CODE": "02",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 1
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "INSTITUTIONAL TRUST",
+        "LINE_OFFICER_RISK_RATING_CODE": "04",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 1
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "INSTITUTIONAL TRUST",
+        "LINE_OFFICER_RISK_RATING_CODE": "05",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 1
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "NON INDIVIDUAL",
+        "LINE_OFFICER_RISK_RATING_CODE": "02",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 1
+      },
+      {
+        "CUSTOMER_TYPE_DESCRIPTION": "NON INDIVIDUAL",
+        "LINE_OFFICER_RISK_RATING_CODE": "03",
+        "CREDIT_REVIEW_RISK_RATING_CODE": null,
+        "REGULATOR_RISK_RATING_CODE": null,
+        "RISK_COUNT": 1
+      }
+    ],
+    "follow_up_suggestions": [
+      "What are the specific risk factors contributing to the high risk ratings for Corporations?",
+      "How do the risk ratings for Domestic Commercial Banks compare to other customer types over time?",
+      "What measures can be implemented to mitigate the risks associated with high-risk customer types?"
+    ],
+    "sources": [
+      {
+        "sql_query": "SELECT CUSTOMER_TYPE_DESCRIPTION, LINE_OFFICER_RISK_RATING_CODE, CREDIT_REVIEW_RISK_RATING_CODE, REGULATOR_RISK_RATING_CODE, COUNT(*) AS RISK_COUNT FROM CUSTOMER_DIMENSION GROUP BY CUSTOMER_TYPE_DESCRIPTION, LINE_OFFICER_RISK_RATING_CODE, CREDIT_REVIEW_RISK_RATING_CODE, REGULATOR_RISK_RATING_CODE ORDER BY RISK_COUNT DESC LIMIT 100",
+        "sql_rows": [
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "02",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 1146
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "01",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 762
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "10",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 640
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "DOMESTIC COMMERCIAL BANK",
+            "LINE_OFFICER_RISK_RATING_CODE": "04",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 208
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "03",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 205
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+            "LINE_OFFICER_RISK_RATING_CODE": null,
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 196
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "04",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 182
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "11",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 120
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "INDIVIDUAL",
+            "LINE_OFFICER_RISK_RATING_CODE": null,
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 105
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "INDIVIDUAL",
+            "LINE_OFFICER_RISK_RATING_CODE": "01",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 99
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "DOMESTIC COMMERCIAL BANK",
+            "LINE_OFFICER_RISK_RATING_CODE": "02",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 79
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "DOMESTIC COMMERCIAL BANK",
+            "LINE_OFFICER_RISK_RATING_CODE": "10",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 59
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "AGENCY",
+            "LINE_OFFICER_RISK_RATING_CODE": "10",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 40
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "DOMESTIC COMMERCIAL BANK",
+            "LINE_OFFICER_RISK_RATING_CODE": "11",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 40
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "LOCAL BANK",
+            "LINE_OFFICER_RISK_RATING_CODE": "10",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 40
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "DOMESTIC COMMERCIAL BANK",
+            "LINE_OFFICER_RISK_RATING_CODE": "01",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 36
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "INDIVIDUAL",
+            "LINE_OFFICER_RISK_RATING_CODE": "02",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 35
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "LIMITED LIABILITY COMANY",
+            "LINE_OFFICER_RISK_RATING_CODE": "01",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 29
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "05",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 25
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "LIMITED LIABILITY COMANY",
+            "LINE_OFFICER_RISK_RATING_CODE": "03",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 25
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "NON INDIVIDUAL",
+            "LINE_OFFICER_RISK_RATING_CODE": null,
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 24
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "14",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 20
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "GENERAL PARTNERSHIP",
+            "LINE_OFFICER_RISK_RATING_CODE": "02",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 20
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "LIMITED PARTNERSHIP",
+            "LINE_OFFICER_RISK_RATING_CODE": "02",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 20
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "SPECIAL PURPOSE COMPANY",
+            "LINE_OFFICER_RISK_RATING_CODE": "10",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 20
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "INDIVIDUAL",
+            "LINE_OFFICER_RISK_RATING_CODE": "03",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 15
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "INDIVIDUAL",
+            "LINE_OFFICER_RISK_RATING_CODE": "04",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 15
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "LIMITED PARTNERSHIP",
+            "LINE_OFFICER_RISK_RATING_CODE": "01",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 15
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "NON INDIVIDUAL",
+            "LINE_OFFICER_RISK_RATING_CODE": "05",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 15
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "INDIVIDUAL",
+            "LINE_OFFICER_RISK_RATING_CODE": "05",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 13
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "LIMITED PARTNERSHIP",
+            "LINE_OFFICER_RISK_RATING_CODE": null,
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 13
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "DOMESTIC COMMERCIAL BANK",
+            "LINE_OFFICER_RISK_RATING_CODE": "05",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 11
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "NATIONAL GOVERNMENT",
+            "LINE_OFFICER_RISK_RATING_CODE": "02",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 11
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "AGENCY",
+            "LINE_OFFICER_RISK_RATING_CODE": "03",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 10
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CHARITABLE ORGANIZATION",
+            "LINE_OFFICER_RISK_RATING_CODE": null,
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 10
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CHARITABLE ORGANIZATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "02",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 10
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "07",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 10
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "15",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 10
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "GENERAL PARTNERSHIP",
+            "LINE_OFFICER_RISK_RATING_CODE": "03",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 10
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "GENERAL PARTNERSHIP",
+            "LINE_OFFICER_RISK_RATING_CODE": "04",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 10
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "GENERAL PARTNERSHIP",
+            "LINE_OFFICER_RISK_RATING_CODE": "05",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 10
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "NATIONAL GOVERNMENT",
+            "LINE_OFFICER_RISK_RATING_CODE": "11",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 10
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "STATE/LOCAL GOVERNMENT",
+            "LINE_OFFICER_RISK_RATING_CODE": "01",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 10
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "TREASURY DEPARTMENT",
+            "LINE_OFFICER_RISK_RATING_CODE": "01",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 10
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "TREASURY DEPARTMENT",
+            "LINE_OFFICER_RISK_RATING_CODE": "10",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 10
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "DOMESTIC COMMERCIAL BANK",
+            "LINE_OFFICER_RISK_RATING_CODE": null,
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 7
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CHARITABLE ORGANIZATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "01",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 6
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "GENERAL PARTNERSHIP",
+            "LINE_OFFICER_RISK_RATING_CODE": null,
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 5
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "LIMITED LIABILITY COMANY",
+            "LINE_OFFICER_RISK_RATING_CODE": "12",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 5
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CORPORATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "12",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 4
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "LIMITED LIABILITY COMANY",
+            "LINE_OFFICER_RISK_RATING_CODE": "04",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 4
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CHARITABLE ORGANIZATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "04",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 3
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "INSTITUTIONAL TRUST",
+            "LINE_OFFICER_RISK_RATING_CODE": null,
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 2
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "STATE/LOCAL GOVERNMENT",
+            "LINE_OFFICER_RISK_RATING_CODE": "02",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 2
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": null,
+            "LINE_OFFICER_RISK_RATING_CODE": null,
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 1
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "CHARITABLE ORGANIZATION",
+            "LINE_OFFICER_RISK_RATING_CODE": "05",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 1
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "GROUP/ET AL CUSTOMER",
+            "LINE_OFFICER_RISK_RATING_CODE": "03",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 1
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "INSTITUTIONAL TRUST",
+            "LINE_OFFICER_RISK_RATING_CODE": "02",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 1
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "INSTITUTIONAL TRUST",
+            "LINE_OFFICER_RISK_RATING_CODE": "04",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 1
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "INSTITUTIONAL TRUST",
+            "LINE_OFFICER_RISK_RATING_CODE": "05",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 1
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "NON INDIVIDUAL",
+            "LINE_OFFICER_RISK_RATING_CODE": "02",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 1
+          },
+          {
+            "CUSTOMER_TYPE_DESCRIPTION": "NON INDIVIDUAL",
+            "LINE_OFFICER_RISK_RATING_CODE": "03",
+            "CREDIT_REVIEW_RISK_RATING_CODE": null,
+            "REGULATOR_RISK_RATING_CODE": null,
+            "RISK_COUNT": 1
+          }
+        ]
+      }
+    ],
+    "success": true,
+    "explanation": "AutoGen multi-agent processing completed",
+    "processing_time": 43.70229887962341,
+    "question": "Analyze customer risk assessment trends and identify concerning patterns.  Please specify by specific risk ratings for all customer types."
+  }
+}

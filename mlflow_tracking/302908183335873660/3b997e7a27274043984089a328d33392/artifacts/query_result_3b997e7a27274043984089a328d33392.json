@@ -1,0 +1,13 @@
+{
+  "question": "Show me the top 5 customers by loan balance",
+  "approach": "Fallback",
+  "execution_time": 0.00036907196044921875,
+  "timestamp": "2025-08-19T14:05:08.038372",
+  "result": {
+    "method": "Fallback",
+    "success": false,
+    "error": "No suitable processing method available for mode: Pattern Match",
+    "processing_time": 0.00036907196044921875,
+    "question": "Show me the top 5 customers by loan balance"
+  }
+}

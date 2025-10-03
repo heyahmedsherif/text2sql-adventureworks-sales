@@ -1,0 +1,16 @@
+{
+  "question": "What are the criteria used to classify customers into different risk ratings?",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 4.77850604057312,
+  "timestamp": "2025-08-19T21:59:19.101701",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "answer": "payload_type=<PayloadType.ANSWER_WITH_SOURCES: 'answer_with_sources'> payload_source=<PayloadSource.ASSISTANT: 'assistant'> body=Body(answer='The criteria used to classify customers into different risk ratings typically include factors such as credit history, income level, debt-to-income ratio, transaction behavior, account age, and any previous defaults or delinquencies. Each of these factors contributes to assessing the likelihood of a customer defaulting on their obligations, which in turn determines their risk rating. However, specific criteria may vary by institution and regulatory requirements.', steps=[['What are the criteria used to classify customers into different risk ratings?']], sources=[], follow_up_suggestions=['What specific factors are weighted more heavily in the risk rating process?', 'How often are customer risk ratings reviewed and updated?', \"What are the implications of a customer's risk rating on their banking services?\"])",
+    "sql_query": null,
+    "results": null,
+    "success": true,
+    "explanation": "AutoGen processing completed",
+    "processing_time": 4.77850604057312,
+    "question": "What are the criteria used to classify customers into different risk ratings?"
+  }
+}

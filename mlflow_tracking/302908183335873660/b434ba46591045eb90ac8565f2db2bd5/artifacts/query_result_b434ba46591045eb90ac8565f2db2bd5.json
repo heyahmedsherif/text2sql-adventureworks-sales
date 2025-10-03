@@ -1,0 +1,23 @@
+{
+  "question": "What are the different risk ratings available to report by",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 4.528667211532593,
+  "timestamp": "2025-08-19T23:01:30.067689",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "response_type": "answer",
+    "answer": "The different risk ratings available for reporting typically include categories such as Low, Medium, High, and Very High. These ratings help in assessing the level of risk associated with various financial products or customer profiles. Additionally, some organizations may have specific risk rating scales that include numerical values or descriptive categories tailored to their risk management frameworks. If you have a specific context or dataset in mind, please provide more details for a more tailored response.",
+    "sql_query": null,
+    "results": [],
+    "follow_up_suggestions": [
+      "What criteria are used to assign these risk ratings?",
+      "How often are the risk ratings updated?",
+      "Can you provide examples of financial products associated with each risk rating?"
+    ],
+    "sources": [],
+    "success": true,
+    "explanation": "AutoGen multi-agent processing completed",
+    "processing_time": 4.528667211532593,
+    "question": "What are the different risk ratings available to report by"
+  }
+}

@@ -1,0 +1,108 @@
+[
+  {
+    "Entity": "Customers",
+    "EntitySchema": "dbo",
+    "Definition": "Contains customer information including contact details and demographics",
+    "Attributes": [
+      {
+        "Attribute": "CustomerID",
+        "DataType": "int",
+        "Definition": "Unique identifier for each customer",
+        "IsPrimaryKey": true
+      },
+      {
+        "Attribute": "FirstName", 
+        "DataType": "nvarchar(50)",
+        "Definition": "Customer's first name"
+      },
+      {
+        "Attribute": "LastName",
+        "DataType": "nvarchar(50)", 
+        "Definition": "Customer's last name"
+      },
+      {
+        "Attribute": "Email",
+        "DataType": "nvarchar(100)",
+        "Definition": "Customer's email address for communication"
+      },
+      {
+        "Attribute": "Phone",
+        "DataType": "nvarchar(20)",
+        "Definition": "Customer's contact phone number"
+      },
+      {
+        "Attribute": "CreatedDate",
+        "DataType": "datetime",
+        "Definition": "Date when customer record was created"
+      }
+    ]
+  },
+  {
+    "Entity": "Orders", 
+    "EntitySchema": "dbo",
+    "Definition": "Contains order information and tracks customer purchases",
+    "Attributes": [
+      {
+        "Attribute": "OrderID",
+        "DataType": "int", 
+        "Definition": "Unique identifier for each order",
+        "IsPrimaryKey": true
+      },
+      {
+        "Attribute": "CustomerID",
+        "DataType": "int",
+        "Definition": "References the customer who placed the order",
+        "IsForeignKey": true,
+        "ReferencedTable": "Customers"
+      },
+      {
+        "Attribute": "OrderDate",
+        "DataType": "datetime",
+        "Definition": "Date and time when the order was placed"
+      },
+      {
+        "Attribute": "TotalAmount", 
+        "DataType": "decimal(10,2)",
+        "Definition": "Total monetary value of the order including tax"
+      },
+      {
+        "Attribute": "Status",
+        "DataType": "nvarchar(20)",
+        "Definition": "Current status of the order (Pending, Shipped, Delivered, Cancelled)"
+      }
+    ]
+  },
+  {
+    "Entity": "Products",
+    "EntitySchema": "dbo", 
+    "Definition": "Catalog of available products with pricing and inventory information",
+    "Attributes": [
+      {
+        "Attribute": "ProductID",
+        "DataType": "int",
+        "Definition": "Unique identifier for each product",
+        "IsPrimaryKey": true
+      },
+      {
+        "Attribute": "ProductName",
+        "DataType": "nvarchar(100)",
+        "Definition": "Name of the product"
+      },
+      {
+        "Attribute": "Category",
+        "DataType": "nvarchar(50)",
+        "Definition": "Product category for classification"
+      },
+      {
+        "Attribute": "Price", 
+        "DataType": "decimal(8,2)",
+        "Definition": "Current selling price of the product"
+      },
+      {
+        "Attribute": "StockQuantity",
+        "DataType": "int",
+        "Definition": "Current available inventory quantity"
+      }
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+
+📋 MANUAL FUNCTION CREATION (If all else fails):
+
+STEP 1: Extract the ZIP file locally
+=====================================
+1. Extract "image_processing_functions.zip" on your computer
+2. You'll see these files:
+   • function_app.py
+   • figure_analysis.py
+   • layout_analysis.py
+   • requirements.txt
+   • etc.
+
+STEP 2: Create Functions in Portal
+==================================
+For each function (layout_analysis, figure_analysis, etc.):
+
+1. In Function App → "Functions" → "+ Create"
+2. Choose "HTTP trigger" template
+3. Function name: "layout_analysis" (for the first one)
+4. Authorization level: "Function"
+5. Click "Create"
+
+STEP 3: Replace Function Code
+=============================
+1. Click on the created function
+2. Go to "Code + Test" tab
+3. Replace the generated code with our function code
+4. Save the function
+
+STEP 4: Add Dependencies
+========================
+1. In Function App → "App files" or "Console"
+2. Upload requirements.txt
+3. Azure will automatically install dependencies
+
+This method takes longer but always works!

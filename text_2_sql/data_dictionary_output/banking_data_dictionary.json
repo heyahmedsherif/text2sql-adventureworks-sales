@@ -1,0 +1,5474 @@
+[
+  {
+    "Entity": "CUSTOMER_DIMENSION",
+    "EntitySchema": "main",
+    "Definition": "The CUSTOMER_DIMENSION table contains detailed information about customers, including identifiers, names, tax information, risk ratings, and various classifications related to their financial relationships. This table serves the business purpose of enabling comprehensive customer analysis, risk assessment, and compliance monitoring, facilitating effective customer relationship management and regulatory adherence.",
+    "Attributes": [
+      {
+        "Attribute": "CUSTOMER_KEY",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for each customer.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_MONTH_ID",
+        "DataType": "TEXT",
+        "Definition": "Identifier for customer data by month.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_ID",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for each customer.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_NAME",
+        "DataType": "TEXT",
+        "Definition": "Customer's full name.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_SHORT_NAME",
+        "DataType": "TEXT",
+        "Definition": "Short name for the customer.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ALTERNATE_CUSTOMER_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "Alternative identifier for the customer.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TAX_ID_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "Customer's tax identification number.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_RESTRICT_CODE",
+        "DataType": "TEXT",
+        "Definition": "Code indicating portfolio restrictions for customers.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "Type of customer classification or category.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "Description of customer type.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_CURRENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "customer currency code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_CURRENCY_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "customer currency description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CONFIDENTIAL_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "confidential type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CONFIDENTIAL_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "confidential type description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INTERNAL_BANK_RELATIONSHIP_COD",
+        "DataType": "TEXT",
+        "Definition": "internal bank relationship cod",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INTERNAL_BANK_RELATIONSHIP_DES",
+        "DataType": "TEXT",
+        "Definition": "internal bank relationship des",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "WATCH_MONITOR_FLAG",
+        "DataType": "TEXT",
+        "Definition": "watch monitor flag",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TAX_STATUS_CODE",
+        "DataType": "TEXT",
+        "Definition": "tax status code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TAX_STATUS_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "tax status description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INCORPORATION_DATE",
+        "DataType": "TEXT",
+        "Definition": "incorporation date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_LANGUAGE",
+        "DataType": "TEXT",
+        "Definition": "customer language",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CITIZENSHIP_CLASS_CODE",
+        "DataType": "TEXT",
+        "Definition": "citizenship class code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CITIZENSHIP_CLASS_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "citizenship class description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MINORITY_CLASS_CODE",
+        "DataType": "TEXT",
+        "Definition": "minority class code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MINORITY_CLASS_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "minority class description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRIMARY_OFFICER_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "primary officer number",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRIMARY_OFFICER_NAME",
+        "DataType": "TEXT",
+        "Definition": "primary officer name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SECONDARY_OFFICER_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "secondary officer number",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SECONDARY_OFFICER_NAME",
+        "DataType": "TEXT",
+        "Definition": "secondary officer name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "gl unit number",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "gl unit description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SERVICING_UNIT_CODE",
+        "DataType": "TEXT",
+        "Definition": "servicing unit code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SERVICING_UNIT_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "servicing unit description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SERVICING_UNIT_SECTION_CODE",
+        "DataType": "TEXT",
+        "Definition": "servicing unit section code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SERVICING_UNIT_SECTION_DESC",
+        "DataType": "TEXT",
+        "Definition": "servicing unit section desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LINE_OFFICER_RISK_RATING_CODE",
+        "DataType": "TEXT",
+        "Definition": "line officer risk rating code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OFFICER_RISK_RATING_DESC",
+        "DataType": "TEXT",
+        "Definition": "officer risk rating desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CREDIT_REVIEW_RISK_RATING_CODE",
+        "DataType": "TEXT",
+        "Definition": "credit review risk rating code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CREDIT_REVIEW_RISK_RATING_DESC",
+        "DataType": "TEXT",
+        "Definition": "credit review risk rating desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REGULATOR_RISK_RATING_CODE",
+        "DataType": "TEXT",
+        "Definition": "regulator risk rating code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REGULATOR_RISK_RATING_DESC",
+        "DataType": "TEXT",
+        "Definition": "regulator risk rating desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LINE_OFFICER_RISK_DATE",
+        "DataType": "TEXT",
+        "Definition": "line officer risk date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CREDIT_REVIEW_RISK_DATE",
+        "DataType": "TEXT",
+        "Definition": "credit review risk date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REGULATOR_RISK_DATE",
+        "DataType": "TEXT",
+        "Definition": "regulator risk date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NEXT_CUSTOMER_REVIEW_DATE",
+        "DataType": "TEXT",
+        "Definition": "next customer review date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_REVIEW_FREQUENCY",
+        "DataType": "TEXT",
+        "Definition": "customer review frequency",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_REVIEW_FREQUENCY_DESC",
+        "DataType": "TEXT",
+        "Definition": "customer review frequency desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_LAST_REVIEW_DATE",
+        "DataType": "TEXT",
+        "Definition": "customer last review date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "WATCH_LIST_DATE",
+        "DataType": "TEXT",
+        "Definition": "watch list date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_STANDARD_REFERENCE_ID",
+        "DataType": "TEXT",
+        "Definition": "customer standard reference id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PUBLISHED_NAME",
+        "DataType": "TEXT",
+        "Definition": "published name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CU_USER_DEFINED_DATE_1",
+        "DataType": "TEXT",
+        "Definition": "cu user defined date 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_NAME_2",
+        "DataType": "TEXT",
+        "Definition": "customer name 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_NAME_3",
+        "DataType": "TEXT",
+        "Definition": "customer name 3",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRIMARY_INDUSTRY_CODE",
+        "DataType": "TEXT",
+        "Definition": "primary industry code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRIMARY_INDUSTRY_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "primary industry description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DATE_LIMITS_APPROVED",
+        "DataType": "TEXT",
+        "Definition": "date limits approved",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NO_OF_CUST_GUARANTEES",
+        "DataType": "TEXT",
+        "Definition": "no of cust guarantees",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NUMBER_OF_CUST_AFFILS",
+        "DataType": "TEXT",
+        "Definition": "number of cust affils",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CU_USER_DEFINED_CD_1",
+        "DataType": "TEXT",
+        "Definition": "cu user defined cd 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CU_USER_DEFINED_DESC_1",
+        "DataType": "TEXT",
+        "Definition": "cu user defined desc 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CU_USER_DEFINED_CD_2",
+        "DataType": "TEXT",
+        "Definition": "cu user defined cd 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CU_USER_DEFINED_DESC_2",
+        "DataType": "TEXT",
+        "Definition": "cu user defined desc 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CU_USER_DEFINED_CD_3",
+        "DataType": "TEXT",
+        "Definition": "cu user defined cd 3",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CU_USER_DEFINED_DESC_3",
+        "DataType": "TEXT",
+        "Definition": "cu user defined desc 3",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CU_DEFAULT_ADDR_SEG_ID",
+        "DataType": "TEXT",
+        "Definition": "cu default addr seg id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_DATE_1",
+        "DataType": "TEXT",
+        "Definition": "user defined date 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_DATE_2",
+        "DataType": "TEXT",
+        "Definition": "user defined date 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_ID",
+        "DataType": "TEXT",
+        "Definition": "user id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_NAME",
+        "DataType": "TEXT",
+        "Definition": "user name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CAPTURE_DATE",
+        "DataType": "TEXT",
+        "Definition": "capture date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_SORT_NAME",
+        "DataType": "TEXT",
+        "Definition": "customer sort name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RISK_SCENARIO_ID",
+        "DataType": "TEXT",
+        "Definition": "risk scenario id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_STATUS_CODE",
+        "DataType": "TEXT",
+        "Definition": "customer status code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_STATUS_DESC",
+        "DataType": "TEXT",
+        "Definition": "customer status desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DISPOSITION_CODE",
+        "DataType": "TEXT",
+        "Definition": "disposition code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DISPOSITION_DESC",
+        "DataType": "TEXT",
+        "Definition": "disposition desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DATE_LENDING_REL_INITIATED",
+        "DataType": "TEXT",
+        "Definition": "date lending rel initiated",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INTERNAL_BANK_UNIT",
+        "DataType": "TEXT",
+        "Definition": "internal bank unit",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "VALID_BORROWER",
+        "DataType": "TEXT",
+        "Definition": "valid borrower",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "VALID_INVESTOR",
+        "DataType": "TEXT",
+        "Definition": "valid investor",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REPLACEMENT_CUST_ID",
+        "DataType": "TEXT",
+        "Definition": "replacement cust id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STANDARD_REFERENCE_ID_TYPE",
+        "DataType": "TEXT",
+        "Definition": "standard reference id type",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STANDARD_REF_ID_TYPE_DESC",
+        "DataType": "TEXT",
+        "Definition": "standard ref id type desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "EUROCLEAR_EB_ID",
+        "DataType": "TEXT",
+        "Definition": "euroclear eb id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DTCC_PART_ID",
+        "DataType": "TEXT",
+        "Definition": "dtcc part id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CU_USER_DEFINED_AMOUNT_1",
+        "DataType": "TEXT",
+        "Definition": "cu user defined amount 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CU_USER_DEFINED_AMOUNT_2",
+        "DataType": "TEXT",
+        "Definition": "cu user defined amount 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_WEB_SITE_URL",
+        "DataType": "TEXT",
+        "Definition": "customer web site url",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SP_ID",
+        "DataType": "TEXT",
+        "Definition": "sp id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CST_CLEARPAR_ID",
+        "DataType": "TEXT",
+        "Definition": "cst clearpar id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_6",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 6",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_2",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_7",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 7",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_3",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 3",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_4",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 4",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_5",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 5",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_1",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MEI",
+        "DataType": "TEXT",
+        "Definition": "mei",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FATCA_STATUS",
+        "DataType": "TEXT",
+        "Definition": "fatca status",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FATCA_STATUS_DESC",
+        "DataType": "TEXT",
+        "Definition": "fatca status desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FATCA_COMPLIANT",
+        "DataType": "TEXT",
+        "Definition": "fatca compliant",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FATCA_COMPLIANT_DESC",
+        "DataType": "TEXT",
+        "Definition": "fatca compliant desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "WATCH_LIST_REASON",
+        "DataType": "TEXT",
+        "Definition": "watch list reason",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "WATCH_LIST_REASON_DESC",
+        "DataType": "TEXT",
+        "Definition": "watch list reason desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NON_PERFORMINGLOANS",
+        "DataType": "TEXT",
+        "Definition": "non performingloans",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CECL_CUST_TEXT_1",
+        "DataType": "TEXT",
+        "Definition": "cecl cust text 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CECL_CUST_TEXT_2",
+        "DataType": "TEXT",
+        "Definition": "cecl cust text 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CECL_CUST_DATE_1",
+        "DataType": "TEXT",
+        "Definition": "cecl cust date 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CECL_CUST_DATE_2",
+        "DataType": "TEXT",
+        "Definition": "cecl cust date 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FPML_DESTINATION",
+        "DataType": "TEXT",
+        "Definition": "fpml destination",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FPML_PREF_INDICATOR",
+        "DataType": "TEXT",
+        "Definition": "fpml pref indicator",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LEGAL_ENTITY_NAME",
+        "DataType": "TEXT",
+        "Definition": "legal entity name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SWIFT_ID",
+        "DataType": "TEXT",
+        "Definition": "swift id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FPML_PREF_INDICATOR_DESC",
+        "DataType": "TEXT",
+        "Definition": "fpml pref indicator desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REQUIRED_SECURITY_DESIGNATION",
+        "DataType": "TEXT",
+        "Definition": "required security designation",
+        "IsPrimaryKey": false
+      }
+    ]
+  },
+  {
+    "Entity": "OWNER_DIMENSION",
+    "EntitySchema": "main",
+    "Definition": "The OWNER_DIMENSION table contains detailed information about business owners, including their identification, names, risk ratings, and industry classifications. This table serves the purpose of facilitating analysis and reporting on ownership structures, risk assessments, and industry affiliations, which are essential for compliance, risk management, and strategic decision-making.",
+    "Attributes": [
+      {
+        "Attribute": "OWNER_KEY",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for each owner.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OWNER_ID",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for each owner.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OWNER_NAME",
+        "DataType": "TEXT",
+        "Definition": "Name of the property owner.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OWNER_NAME_2",
+        "DataType": "TEXT",
+        "Definition": "Secondary name of the owner.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OWNER_NAME_3",
+        "DataType": "TEXT",
+        "Definition": "Third variant of the owner's name.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OWNER_SHORT_NAME",
+        "DataType": "TEXT",
+        "Definition": "Short name for the owner.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OFFICER_RISK_RATING_CODE",
+        "DataType": "TEXT",
+        "Definition": "Code indicating officer's risk assessment level.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OFFICER_RISK_RATING_DESC",
+        "DataType": "TEXT",
+        "Definition": "Description of officer's risk rating.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OWNER_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "Code representing the type of owner.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OWNER_TYPE_DESC",
+        "DataType": "TEXT",
+        "Definition": "Description of the owner's type.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRIMARY_INDUSTRY_CODE",
+        "DataType": "TEXT",
+        "Definition": "primary industry code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRIMARY_INDUSTRY_DESC",
+        "DataType": "TEXT",
+        "Definition": "primary industry desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INDUSTRY_GROUP_CODE",
+        "DataType": "TEXT",
+        "Definition": "industry group code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INDUSTRY_GROUP_NAME",
+        "DataType": "TEXT",
+        "Definition": "industry group name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STATE",
+        "DataType": "TEXT",
+        "Definition": "state",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "POSTAL_ZIP_CD",
+        "DataType": "TEXT",
+        "Definition": "postal zip cd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "COUNTRY_CD",
+        "DataType": "TEXT",
+        "Definition": "country cd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOCATION_CD",
+        "DataType": "TEXT",
+        "Definition": "location cd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ALT_OWNER_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "alt owner number",
+        "IsPrimaryKey": false
+      }
+    ]
+  },
+  {
+    "Entity": "LIMIT_DIMENSION",
+    "EntitySchema": "main",
+    "Definition": "The LIMIT_DIMENSION table contains detailed information about various financial limits associated with portfolios, including attributes such as limit types, statuses, effective dates, and risk mitigation details. This table serves the business purpose of managing and analyzing credit limits, ensuring compliance with lending policies, and facilitating risk assessment and reporting within financial institutions.",
+    "Attributes": [
+      {
+        "Attribute": "LIMIT_KEY",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for limit records.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_ID",
+        "DataType": "TEXT",
+        "Definition": "Identifier for the portfolio (text format).",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "Customer account identification number.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_ACCOUNT_OWNER_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "Account owner identification number (text format).",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_LENDER_TYPE",
+        "DataType": "TEXT",
+        "Definition": "Type of lender in the CA market.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_LIMIT_SECTION_ID",
+        "DataType": "TEXT",
+        "Definition": "Identifier for limit section in CA.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_LIMIT_TYPE",
+        "DataType": "TEXT",
+        "Definition": "Type of limit applied to the dimension.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_LIMIT_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "Description of limit type in text format.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_LIMIT_KEY",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for limit records.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_PARENT_SECTION_ID",
+        "DataType": "TEXT",
+        "Definition": "Identifier for the parent section in CA.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_SECTION_LEVEL",
+        "DataType": "TEXT",
+        "Definition": "ca section level",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_LIMIT_SECTION_HIERARCHY",
+        "DataType": "TEXT",
+        "Definition": "ca limit section hierarchy",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_STATUS_CODE",
+        "DataType": "TEXT",
+        "Definition": "limit status code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMITS_STATUS_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "limits status description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMITS_REVOLVING_FLAG",
+        "DataType": "TEXT",
+        "Definition": "limits revolving flag",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECOURSE_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "recourse type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECOURSE_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "recourse type description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMITS_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "limits description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_CURRENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "limit currency code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_CURRENCY_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "limit currency description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_BASE_CURRENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "portfolio base currency code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_BASE_CURRENCY_DESC",
+        "DataType": "TEXT",
+        "Definition": "portfolio base currency desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_EFFECTIVE_DATE",
+        "DataType": "TEXT",
+        "Definition": "limit effective date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_EXPIRATION_DATE",
+        "DataType": "TEXT",
+        "Definition": "limit expiration date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_STATUS_DATE",
+        "DataType": "TEXT",
+        "Definition": "limit status date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_LAST_TAKEDOWN_DATE",
+        "DataType": "TEXT",
+        "Definition": "limit last takedown date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_LAST_CHANGE_DATE",
+        "DataType": "TEXT",
+        "Definition": "limit last change date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_LAST_USAGE_CHANGE_DATE",
+        "DataType": "TEXT",
+        "Definition": "limit last usage change date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_STANDARD_REFERENCE_ID",
+        "DataType": "TEXT",
+        "Definition": "limit standard reference id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_CODE_1",
+        "DataType": "TEXT",
+        "Definition": "user defined code 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_CODE_2",
+        "DataType": "TEXT",
+        "Definition": "user defined code 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_DATE_1",
+        "DataType": "TEXT",
+        "Definition": "user defined date 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_DATE_2",
+        "DataType": "TEXT",
+        "Definition": "user defined date 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_DESCRIPTION_1",
+        "DataType": "TEXT",
+        "Definition": "user defined description 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_DESCRIPTION_2",
+        "DataType": "TEXT",
+        "Definition": "user defined description 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_DATE_3",
+        "DataType": "TEXT",
+        "Definition": "user defined date 3",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_DATE_4",
+        "DataType": "TEXT",
+        "Definition": "user defined date 4",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_AMT_1",
+        "DataType": "TEXT",
+        "Definition": "user defined amt 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_AMT_2",
+        "DataType": "TEXT",
+        "Definition": "user defined amt 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_AMT_3",
+        "DataType": "TEXT",
+        "Definition": "user defined amt 3",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_AMT_4",
+        "DataType": "TEXT",
+        "Definition": "user defined amt 4",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_LIMIT_KEY_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "ca limit key description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_EXPIRATION_DATE",
+        "DataType": "TEXT",
+        "Definition": "original expiration date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CORRESPONDENCE_INSTRUCTIONS",
+        "DataType": "TEXT",
+        "Definition": "correspondence instructions",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_PRI_OBLIGOR_NO",
+        "DataType": "TEXT",
+        "Definition": "ca pri obligor no",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_COND_CD",
+        "DataType": "TEXT",
+        "Definition": "gl cond cd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DATE_LMT_BOOKED",
+        "DataType": "TEXT",
+        "Definition": "date lmt booked",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUST_ADVISED_OF_THIS_LMT",
+        "DataType": "TEXT",
+        "Definition": "cust advised of this lmt",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RESTRICTIONS_EXIST",
+        "DataType": "TEXT",
+        "Definition": "restrictions exist",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STANDARD_REFERENCE_ID",
+        "DataType": "TEXT",
+        "Definition": "standard reference id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STANDARD_REFERENCE_ID_TYPE",
+        "DataType": "TEXT",
+        "Definition": "standard reference id type",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STANDARD_REF_ID_TYPE_DESC",
+        "DataType": "TEXT",
+        "Definition": "standard ref id type desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MINIMUM_TENOR_IN_DAYS",
+        "DataType": "TEXT",
+        "Definition": "minimum tenor in days",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MAXIMUM_TENOR_IN_DAYS",
+        "DataType": "TEXT",
+        "Definition": "maximum tenor in days",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_USER_DEFINED_DATE_1",
+        "DataType": "TEXT",
+        "Definition": "limit user defined date 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_USER_DEFINED_DATE_2",
+        "DataType": "TEXT",
+        "Definition": "limit user defined date 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MAX_NO_OF_TAKEDOWNS",
+        "DataType": "TEXT",
+        "Definition": "max no of takedowns",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NO_OF_TAKEDOWNS",
+        "DataType": "TEXT",
+        "Definition": "no of takedowns",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "IS_PROFILE",
+        "DataType": "TEXT",
+        "Definition": "is profile",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RISK_MITIGATION_CODE",
+        "DataType": "TEXT",
+        "Definition": "risk mitigation code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DEFAULT_TYPE_INDICATOR",
+        "DataType": "TEXT",
+        "Definition": "default type indicator",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INVESTOR_ROLE",
+        "DataType": "TEXT",
+        "Definition": "investor role",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RISK_MITIGATION_CODE_DESC",
+        "DataType": "TEXT",
+        "Definition": "risk mitigation code desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DEFAULT_TYPE_INDICATOR_DESC",
+        "DataType": "TEXT",
+        "Definition": "default type indicator desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIG_LMT_STATUS_CD",
+        "DataType": "TEXT",
+        "Definition": "orig lmt status cd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LMT_ELIGIBLE_FOR_ASGMT",
+        "DataType": "TEXT",
+        "Definition": "lmt eligible for asgmt",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TARGET_CLOSING_DATE",
+        "DataType": "TEXT",
+        "Definition": "target closing date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOSS_GIVEN_DEFAULT",
+        "DataType": "TEXT",
+        "Definition": "loss given default",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ACTUAL_CLOSING_DATE",
+        "DataType": "TEXT",
+        "Definition": "actual closing date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIG_LMT_STATUS_DESC",
+        "DataType": "TEXT",
+        "Definition": "orig lmt status desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FAC_FOREIGN_TAX_RATE",
+        "DataType": "TEXT",
+        "Definition": "fac foreign tax rate",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INVESTOR_ROLE_DESC",
+        "DataType": "TEXT",
+        "Definition": "investor role desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PREPAY_PENALTY_APPLIES",
+        "DataType": "TEXT",
+        "Definition": "prepay penalty applies",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INTEREST_RATE_TYPE_GRP",
+        "DataType": "TEXT",
+        "Definition": "interest rate type grp",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "VARIANCE_LOWER_LMT_ACTION",
+        "DataType": "TEXT",
+        "Definition": "variance lower lmt action",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "VARIANCE_UPPER_LMT_ACTION",
+        "DataType": "TEXT",
+        "Definition": "variance upper lmt action",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "VARIANCE_UPPER_LMT_PCTG",
+        "DataType": "TEXT",
+        "Definition": "variance upper lmt pctg",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "VARIANCE_LOWER_LMT_PCTG",
+        "DataType": "TEXT",
+        "Definition": "variance lower lmt pctg",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "VARIANCE_LOWER_LMT_ACT_DSC",
+        "DataType": "TEXT",
+        "Definition": "variance lower lmt act dsc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "VARIANCE_UPPER_LMT_ACT_DSC",
+        "DataType": "TEXT",
+        "Definition": "variance upper lmt act dsc",
+        "IsPrimaryKey": false
+      }
+    ]
+  },
+  {
+    "Entity": "DM_META",
+    "EntitySchema": "main",
+    "Definition": "The DM_META table serves as a metadata repository that provides detailed information about database tables and their columns, including descriptions, data types, and constraints. This table is essential for data governance, enabling users to understand the structure and characteristics of the data within the database, thereby facilitating effective data management and utilization.",
+    "Attributes": [
+      {
+        "Attribute": "OWNER",
+        "DataType": "TEXT",
+        "Definition": "Owner of the database record.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TABLE_NAME",
+        "DataType": "TEXT",
+        "Definition": "Name of the database table.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TABLE_DESC",
+        "DataType": "TEXT",
+        "Definition": "Description of the table's purpose or content.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "COLUMN_NAME",
+        "DataType": "TEXT",
+        "Definition": "Name of the database column.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "COLUMN_DESC",
+        "DataType": "TEXT",
+        "Definition": "Description of the database column.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DATA_TYPE",
+        "DataType": "TEXT",
+        "Definition": "Type of data stored in the column.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DATA_LENGTH",
+        "DataType": "TEXT",
+        "Definition": "Length of the data in text format.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DATA_SCALE",
+        "DataType": "TEXT",
+        "Definition": "Scale of the data represented as text.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "COLUMN_ID",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for each database column.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NULLABLE",
+        "DataType": "TEXT",
+        "Definition": "Indicates if the field can be null.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PK_POSITION",
+        "DataType": "TEXT",
+        "Definition": "pk position",
+        "IsPrimaryKey": false
+      }
+    ]
+  },
+  {
+    "Entity": "LOAN_PRODUCT_DIMENSION",
+    "EntitySchema": "main",
+    "Definition": "The LOAN_PRODUCT_DIMENSION table contains detailed information about various loan products, including their characteristics, statuses, and associated customer and portfolio data. This table serves the business purpose of enabling financial institutions to analyze, manage, and report on their loan offerings, ensuring compliance with regulations and optimizing loan servicing and risk assessment processes.",
+    "Attributes": [
+      {
+        "Attribute": "PRODUCT_KEY",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for loan products.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRODUCT_MONTH",
+        "DataType": "TEXT",
+        "Definition": "Month associated with the loan product.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_ID",
+        "DataType": "TEXT",
+        "Definition": "Identifier for loan product portfolio.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "Description of loan product portfolio.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OBLIGATION_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for loan obligations.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "Customer account number for loan products.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "Description of loan product features.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_CUSTOMER_ID",
+        "DataType": "TEXT",
+        "Definition": "Customer identifier for loan products.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_CUSTOMER_NAME",
+        "DataType": "TEXT",
+        "Definition": "Customer name associated with the loan product.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_CURRENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "Currency code for loan products.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_CURRENCY_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "ca currency description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DEAL_PORTFOLIO_ID",
+        "DataType": "TEXT",
+        "Definition": "deal portfolio id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DEAL_CUSTOMER_ID",
+        "DataType": "TEXT",
+        "Definition": "deal customer id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DEAL_CA_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "deal ca number",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DEAL_CURRENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "deal currency code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DEAL_CURRENCY_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "deal currency description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ACCOUNT_STRUCTURE_CODE",
+        "DataType": "TEXT",
+        "Definition": "account structure code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ACCOUNT_STRUCTURE_DESC",
+        "DataType": "TEXT",
+        "Definition": "account structure desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "IS_TIED_TO_CA",
+        "DataType": "TEXT",
+        "Definition": "is tied to ca",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ACCOUNTING_METHOD_CODE",
+        "DataType": "TEXT",
+        "Definition": "accounting method code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ACCOUNTING_METHOD_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "accounting method description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_LENDER_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "customer lender type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OUR_SHARE_LENDER_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "our share lender type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INSTRUMENT_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "instrument type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INSTRUMENT_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "instrument type description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_STATUS_CODE",
+        "DataType": "TEXT",
+        "Definition": "loan status code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_STATUS_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "loan status description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CLOSURE_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "closure type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CLOSURE_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "closure type description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRODUCT_GROUP_CODE",
+        "DataType": "TEXT",
+        "Definition": "product group code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRODUCT_GROUP_DESC",
+        "DataType": "TEXT",
+        "Definition": "product group desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRODUCT_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "product type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRODUCT_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "product type description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PURPOSE_CODE",
+        "DataType": "TEXT",
+        "Definition": "purpose code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PURPOSE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "purpose description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BOOKING_UNIT_CODE",
+        "DataType": "TEXT",
+        "Definition": "booking unit code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BOOKING_UNIT_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "booking unit description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "COUNTRY_CODE_OF_BOOKING",
+        "DataType": "TEXT",
+        "Definition": "country code of booking",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "COUNTRY_OF_BOOKING_DESC",
+        "DataType": "TEXT",
+        "Definition": "country of booking desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEDERAL_LOAN_CLASS_CODE",
+        "DataType": "TEXT",
+        "Definition": "federal loan class code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEDERAL_LOAN_CLASS_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "federal loan class description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ADVANCE_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "advance type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ADVANCE_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "advance type description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REGULATION_Z",
+        "DataType": "TEXT",
+        "Definition": "regulation z",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REGULATION_U",
+        "DataType": "TEXT",
+        "Definition": "regulation u",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ELIGIBLE_FOR_1098",
+        "DataType": "TEXT",
+        "Definition": "eligible for 1098",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INDUSTRY_CLASS_CODE",
+        "DataType": "TEXT",
+        "Definition": "industry class code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INDUSTRY_CLASS_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "industry class description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CALLABLE_ON_DEMAND",
+        "DataType": "TEXT",
+        "Definition": "callable on demand",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_SECURED",
+        "DataType": "TEXT",
+        "Definition": "loan secured",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PLEDGED_FOR_COLLATERAL",
+        "DataType": "TEXT",
+        "Definition": "pledged for collateral",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BOOKING_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "booking type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BOOKING_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "booking type description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PREVIOUS_OBLIGATION_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "previous obligation number",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INTEREST_RATE_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "interest rate type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INTEREST_RATE_TYPE_DESC",
+        "DataType": "TEXT",
+        "Definition": "interest rate type desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AGENT_BANK_CUSTOMER_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "agent bank customer number",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "EFFECTIVE_DATE",
+        "DataType": "TEXT",
+        "Definition": "effective date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LEGAL_MATURITY_DATE",
+        "DataType": "TEXT",
+        "Definition": "legal maturity date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INT_RATE_MATURITY_DATE",
+        "DataType": "TEXT",
+        "Definition": "int rate maturity date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RATE_SETTING_DATE",
+        "DataType": "TEXT",
+        "Definition": "rate setting date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STATUS_DATE",
+        "DataType": "TEXT",
+        "Definition": "status date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_SECTION_BOOKED_UNDER",
+        "DataType": "TEXT",
+        "Definition": "ca section booked under",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_FX_RATE_GROUP",
+        "DataType": "TEXT",
+        "Definition": "portfolio fx rate group",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_FX_RATE_GROUP",
+        "DataType": "TEXT",
+        "Definition": "ca fx rate group",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_BASE_CURRENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "portfolio base currency code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_BASE_CURRENCY_DESC",
+        "DataType": "TEXT",
+        "Definition": "portfolio base currency desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_CURRENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "loan currency code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_CURRENCY_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "loan currency description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SERVICING_USER_ID",
+        "DataType": "TEXT",
+        "Definition": "servicing user id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SERVICING_USER_NAME",
+        "DataType": "TEXT",
+        "Definition": "servicing user name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CURRENT_LOAN_OFFICER_CODE",
+        "DataType": "TEXT",
+        "Definition": "current loan officer code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CURRENT_LOAN_OFFICER_NAME",
+        "DataType": "TEXT",
+        "Definition": "current loan officer name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_GL_UNIT_CODE",
+        "DataType": "TEXT",
+        "Definition": "loan gl unit code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_GL_UNIT_DESC",
+        "DataType": "TEXT",
+        "Definition": "loan gl unit desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_SERVICING_UNIT_CODE",
+        "DataType": "TEXT",
+        "Definition": "loan servicing unit code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_SERVICING_UNIT_DESC",
+        "DataType": "TEXT",
+        "Definition": "loan servicing unit desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_SERVICING_UNIT_SECT_CODE",
+        "DataType": "TEXT",
+        "Definition": "loan servicing unit sect code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_SERVICING_UNIT_SECT_DESC",
+        "DataType": "TEXT",
+        "Definition": "loan servicing unit sect desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INTERNAL_RISK_RATING_CODE",
+        "DataType": "TEXT",
+        "Definition": "internal risk rating code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INTERNAL_RISK_RATING_DESC",
+        "DataType": "TEXT",
+        "Definition": "internal risk rating desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REGULAR_RISK_RATING_CODE",
+        "DataType": "TEXT",
+        "Definition": "regular risk rating code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REGULAR_RISK_RATING_DESC",
+        "DataType": "TEXT",
+        "Definition": "regular risk rating desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "WATCH_LIST",
+        "DataType": "TEXT",
+        "Definition": "watch list",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PROBLEM_STATUS_DATE",
+        "DataType": "TEXT",
+        "Definition": "problem status date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECAPTURE_STATUS_DATE",
+        "DataType": "TEXT",
+        "Definition": "recapture status date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_CHARGE_OFF_DATE",
+        "DataType": "TEXT",
+        "Definition": "original charge off date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LAST_CHARGE_OFF_DATE",
+        "DataType": "TEXT",
+        "Definition": "last charge off date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LAST_REGEGOTIATION_DATE",
+        "DataType": "TEXT",
+        "Definition": "last regegotiation date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LAST_RESTRUCTURING_DATE",
+        "DataType": "TEXT",
+        "Definition": "last restructuring date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_CODE_1",
+        "DataType": "TEXT",
+        "Definition": "user code 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_CODE_2",
+        "DataType": "TEXT",
+        "Definition": "user code 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_CODE_3",
+        "DataType": "TEXT",
+        "Definition": "user code 3",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_CODE_4",
+        "DataType": "TEXT",
+        "Definition": "user code 4",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DATE_1",
+        "DataType": "TEXT",
+        "Definition": "user date 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DATE_2",
+        "DataType": "TEXT",
+        "Definition": "user date 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CL_STANDARD_REFERENCE_ID",
+        "DataType": "TEXT",
+        "Definition": "cl standard reference id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CAN_BE_TRADED_FLAG",
+        "DataType": "TEXT",
+        "Definition": "can be traded flag",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MTM_ELIGIBLE_FLAG",
+        "DataType": "TEXT",
+        "Definition": "mtm eligible flag",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_CODE_DESCRIPTION_1",
+        "DataType": "TEXT",
+        "Definition": "user code description 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_CODE_DESCRIPTION_2",
+        "DataType": "TEXT",
+        "Definition": "user code description 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_CODE_DESCRIPTION_3",
+        "DataType": "TEXT",
+        "Definition": "user code description 3",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_CODE_DESCRIPTION_4",
+        "DataType": "TEXT",
+        "Definition": "user code description 4",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CL_CUSTOMER_ID",
+        "DataType": "TEXT",
+        "Definition": "cl customer id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PROCESSING_GROUP",
+        "DataType": "TEXT",
+        "Definition": "processing group",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_COUNTRY_OF_EXPOSURE_RISK",
+        "DataType": "TEXT",
+        "Definition": "ca country of exposure risk",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_CNTRY_OF_EXPOSURE_RISK_DESC",
+        "DataType": "TEXT",
+        "Definition": "ca cntry of exposure risk desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CL_ADMINISTRATIVE_USER_ID",
+        "DataType": "TEXT",
+        "Definition": "cl administrative user id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CL_ADMINISTRATIVE_USER_NAME",
+        "DataType": "TEXT",
+        "Definition": "cl administrative user name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_MATURITY_DATE",
+        "DataType": "TEXT",
+        "Definition": "original maturity date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_GL_COND_CD",
+        "DataType": "TEXT",
+        "Definition": "original gl cond cd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DATE_BOOKED",
+        "DataType": "TEXT",
+        "Definition": "date booked",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INTERNAL_REFERENCE_NO",
+        "DataType": "TEXT",
+        "Definition": "internal reference no",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "EXTERNAL_REFERENCE_NO",
+        "DataType": "TEXT",
+        "Definition": "external reference no",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BENEFICIARY_CUSTOMER_NO",
+        "DataType": "TEXT",
+        "Definition": "beneficiary customer no",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BENEFICIARY_CUSTOMER_NAME",
+        "DataType": "TEXT",
+        "Definition": "beneficiary customer name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_CONDITION_CODE",
+        "DataType": "TEXT",
+        "Definition": "gl condition code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORT_TYPE",
+        "DataType": "TEXT",
+        "Definition": "port type",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "portfolio type description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BANK_LIABILITY_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "bank liability type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BANK_LIABILITY_TYPE_DESC",
+        "DataType": "TEXT",
+        "Definition": "bank liability type desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_LIABILITY_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "customer liability type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_LIABILITY_TYPE_DESC",
+        "DataType": "TEXT",
+        "Definition": "customer liability type desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STATUS_CODE",
+        "DataType": "TEXT",
+        "Definition": "status code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STATUS_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "status description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STANDARD_REFERENCE_ID",
+        "DataType": "TEXT",
+        "Definition": "standard reference id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CAN_BE_TRADED",
+        "DataType": "TEXT",
+        "Definition": "can be traded",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MTM_ELIGIBLE",
+        "DataType": "TEXT",
+        "Definition": "mtm eligible",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STANDARD_REFERENCE_ID_TYPE",
+        "DataType": "TEXT",
+        "Definition": "standard reference id type",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STANDARD_REF_ID_TYPE_DESC",
+        "DataType": "TEXT",
+        "Definition": "standard ref id type desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIG_RESPONS_OFFICER_NO",
+        "DataType": "TEXT",
+        "Definition": "orig respons officer no",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIG_RESPONS_OFFICER_NAME",
+        "DataType": "TEXT",
+        "Definition": "orig respons officer name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_GL_UNIT_NO",
+        "DataType": "TEXT",
+        "Definition": "original gl unit no",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_GL_UNIT_NAME",
+        "DataType": "TEXT",
+        "Definition": "original gl unit name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RISK_RATING_CRED_REVIEW",
+        "DataType": "TEXT",
+        "Definition": "risk rating cred review",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RISK_RATING_CRED_REVIEW_DESC",
+        "DataType": "TEXT",
+        "Definition": "risk rating cred review desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RISK_OFFICER_DATE",
+        "DataType": "TEXT",
+        "Definition": "risk officer date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RISK_CRED_REVIEW_DATE",
+        "DataType": "TEXT",
+        "Definition": "risk cred review date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RISK_REGULATOR_DATE",
+        "DataType": "TEXT",
+        "Definition": "risk regulator date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NEXT_REVIEW_DATE",
+        "DataType": "TEXT",
+        "Definition": "next review date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REVIEW_FREQ_CODE",
+        "DataType": "TEXT",
+        "Definition": "review freq code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REVIEW_FREQ_DESC",
+        "DataType": "TEXT",
+        "Definition": "review freq desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LAST_REVIEW_DATE",
+        "DataType": "TEXT",
+        "Definition": "last review date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NOTIFY_WHEN_RATE_CHANGES",
+        "DataType": "TEXT",
+        "Definition": "notify when rate changes",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FIN_TRAN_DDA_ACCT_NO",
+        "DataType": "TEXT",
+        "Definition": "fin tran dda acct no",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LAST_RENEWAL_DATE",
+        "DataType": "TEXT",
+        "Definition": "last renewal date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REPORTING_ACCT_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "reporting acct type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REPORTING_ACCT_TYPE_DESC",
+        "DataType": "TEXT",
+        "Definition": "reporting acct type desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INCOMING_PMT_INSTR_AGENT",
+        "DataType": "TEXT",
+        "Definition": "incoming pmt instr agent",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OUTGOING_PMT_INSTR_AGENT",
+        "DataType": "TEXT",
+        "Definition": "outgoing pmt instr agent",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AGENT_BANK_CORRESPONDENCE_ID",
+        "DataType": "TEXT",
+        "Definition": "agent bank correspondence id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AGENT_BANK_ADDR_ID",
+        "DataType": "TEXT",
+        "Definition": "agent bank addr id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SELF_LIQUIDATION_DATE",
+        "DataType": "TEXT",
+        "Definition": "self liquidation date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRICING_TEMPLATE_ID",
+        "DataType": "TEXT",
+        "Definition": "pricing template id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RISK_SCENARIO",
+        "DataType": "TEXT",
+        "Definition": "risk scenario",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_CD_1",
+        "DataType": "TEXT",
+        "Definition": "user defined cd 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "USER_DEFINED_DESC_1",
+        "DataType": "TEXT",
+        "Definition": "user defined desc 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DEAL_CUSTOMER_NAME",
+        "DataType": "TEXT",
+        "Definition": "deal customer name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AGENT_BANK_CUSTOMER_NAME",
+        "DataType": "TEXT",
+        "Definition": "agent bank customer name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CL_CUSTOMER_NAME",
+        "DataType": "TEXT",
+        "Definition": "cl customer name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INSTR_PROC_CLASSIFICATION",
+        "DataType": "TEXT",
+        "Definition": "instr proc classification",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INSTR_PROC_CLASSIFICATION_DESC",
+        "DataType": "TEXT",
+        "Definition": "instr proc classification desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DISCOUNT_CALCULATION_TYPE",
+        "DataType": "TEXT",
+        "Definition": "discount calculation type",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DISCOUNT_CALCULATION_TYPE_DESC",
+        "DataType": "TEXT",
+        "Definition": "discount calculation type desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ACCOUNT_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "account type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ACCOUNT_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "account type description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PROD_TYPE_CAN_BE_SOLD_OR_SYND",
+        "DataType": "TEXT",
+        "Definition": "prod type can be sold or synd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRI_BILLING_SCHED_REQUIREMENT",
+        "DataType": "TEXT",
+        "Definition": "pri billing sched requirement",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRI_BILLING_SCHED_REQUIRE_DESC",
+        "DataType": "TEXT",
+        "Definition": "pri billing sched require desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ALLOW_NEGATIVE_PRINCIPAL_BAL",
+        "DataType": "TEXT",
+        "Definition": "allow negative principal bal",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ACCOUNTING_METHOD_DATE",
+        "DataType": "TEXT",
+        "Definition": "accounting method date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BID_REFERENCE_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "bid reference number",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NUMBER_OF_ACCOUNT_RECORDS",
+        "DataType": "TEXT",
+        "Definition": "number of account records",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_SECTION_1",
+        "DataType": "TEXT",
+        "Definition": "ca section 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_SECTION_2",
+        "DataType": "TEXT",
+        "Definition": "ca section 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_SECTION_3",
+        "DataType": "TEXT",
+        "Definition": "ca section 3",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_SECTION_4",
+        "DataType": "TEXT",
+        "Definition": "ca section 4",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_SECTION_5",
+        "DataType": "TEXT",
+        "Definition": "ca section 5",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FACILITY_TYPE_DESC",
+        "DataType": "TEXT",
+        "Definition": "facility type desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FACILITY_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "facility type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "COLSON_POLK_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "colson polk number",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SBA_APPROVAL_DATE",
+        "DataType": "TEXT",
+        "Definition": "sba approval date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SBA_CLOSING_DATE",
+        "DataType": "TEXT",
+        "Definition": "sba closing date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SBA_STATUS",
+        "DataType": "TEXT",
+        "Definition": "sba status",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "IS_PROFILE",
+        "DataType": "TEXT",
+        "Definition": "is profile",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SBA_STATUS_DESC",
+        "DataType": "TEXT",
+        "Definition": "sba status desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INDUSTRY_GROUP_ID",
+        "DataType": "TEXT",
+        "Definition": "industry group id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INDUSTRY_GROUP_NAME",
+        "DataType": "TEXT",
+        "Definition": "industry group name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NO_RENEWALS_THIS_OBLIGTN",
+        "DataType": "TEXT",
+        "Definition": "no renewals this obligtn",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LAST_CHANGE_DATE",
+        "DataType": "TEXT",
+        "Definition": "last change date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TOTAL_NO_OF_RENEWALS",
+        "DataType": "TEXT",
+        "Definition": "total no of renewals",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LN_ORIG_TRADE_TICKET",
+        "DataType": "TEXT",
+        "Definition": "ln orig trade ticket",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AGENT_CONTRACT_ID",
+        "DataType": "TEXT",
+        "Definition": "agent contract id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CONTRACT_INT_ACCRUAL_SCHED",
+        "DataType": "TEXT",
+        "Definition": "contract int accrual sched",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ISDA_FLOATING_RATE_IDX",
+        "DataType": "TEXT",
+        "Definition": "isda floating rate idx",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LN_CONTRACT_INFO",
+        "DataType": "TEXT",
+        "Definition": "ln contract info",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LN_ORIG_COUNTERPARTY_ID",
+        "DataType": "TEXT",
+        "Definition": "ln orig counterparty id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LN_CONTRACT_NAME",
+        "DataType": "TEXT",
+        "Definition": "ln contract name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LC_ISSUING_BANK",
+        "DataType": "TEXT",
+        "Definition": "lc issuing bank",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LN_CUSIP_ID",
+        "DataType": "TEXT",
+        "Definition": "ln cusip id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ACCT_ELIGIBLE_FOR_ASGMT",
+        "DataType": "TEXT",
+        "Definition": "acct eligible for asgmt",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SBA_GROUP_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "sba group number",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SBA_DIVISION",
+        "DataType": "TEXT",
+        "Definition": "sba division",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FINANCIAL_FX_RATE_GROUP",
+        "DataType": "TEXT",
+        "Definition": "financial fx rate group",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_2",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_4",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 4",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_3",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 3",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_7",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 7",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_5",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 5",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_6",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 6",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_1",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PIK_INTEREST_AS",
+        "DataType": "TEXT",
+        "Definition": "pik interest as",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "EVERGREEN_OPTION_EXPIRES",
+        "DataType": "TEXT",
+        "Definition": "evergreen option expires",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LC_PURPOSE",
+        "DataType": "TEXT",
+        "Definition": "lc purpose",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LC_TYPE",
+        "DataType": "TEXT",
+        "Definition": "lc type",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_RATE_BASE",
+        "DataType": "TEXT",
+        "Definition": "loan rate base",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LC_ISSUANCE_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "lc issuance number",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SBA_LOAN_TYPE",
+        "DataType": "TEXT",
+        "Definition": "sba loan type",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SBA_LOAN_TYPE_DESC",
+        "DataType": "TEXT",
+        "Definition": "sba loan type desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SECURITIZED",
+        "DataType": "TEXT",
+        "Definition": "securitized",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DATE_TO_RESUME_DEFERRED_PMTS",
+        "DataType": "TEXT",
+        "Definition": "date to resume deferred pmts",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INTEREST_PAID_TO_DATE",
+        "DataType": "TEXT",
+        "Definition": "interest paid to date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SBA_COLSON_1502_REPORTING",
+        "DataType": "TEXT",
+        "Definition": "sba colson 1502 reporting",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SUBJECT_TO_FATCA",
+        "DataType": "TEXT",
+        "Definition": "subject to fatca",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SUBJECT_TO_FATCA_DESC",
+        "DataType": "TEXT",
+        "Definition": "subject to fatca desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECAST_LOAN",
+        "DataType": "TEXT",
+        "Definition": "recast loan",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECAST_LOAN_DESC",
+        "DataType": "TEXT",
+        "Definition": "recast loan desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECAST_CALENDAR",
+        "DataType": "TEXT",
+        "Definition": "recast calendar",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECAST_FREQUENCY",
+        "DataType": "TEXT",
+        "Definition": "recast frequency",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECAST_BUSINESS_DAY_ADJ",
+        "DataType": "TEXT",
+        "Definition": "recast business day adj",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECAST_BUSINESS_DAY_ADJ_DESC",
+        "DataType": "TEXT",
+        "Definition": "recast business day adj desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECAST_DUE_MONTH_END",
+        "DataType": "TEXT",
+        "Definition": "recast due month end",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NEXT_RECAST_EFFECTIVE_DATE",
+        "DataType": "TEXT",
+        "Definition": "next recast effective date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECAST_TERM_OPTION",
+        "DataType": "TEXT",
+        "Definition": "recast term option",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECAST_TERM_OPTION_DESC",
+        "DataType": "TEXT",
+        "Definition": "recast term option desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECAST_AMORTIZATION_END_DATE",
+        "DataType": "TEXT",
+        "Definition": "recast amortization end date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_CYCLE_DAY",
+        "DataType": "TEXT",
+        "Definition": "original cycle day",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LAST_ADJUSTED_DATE",
+        "DataType": "TEXT",
+        "Definition": "last adjusted date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MAX_NO_OF_RECAST_EVENTS",
+        "DataType": "TEXT",
+        "Definition": "max no of recast events",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NO_OF_RECAST_EVENTS_PROCESSED",
+        "DataType": "TEXT",
+        "Definition": "no of recast events processed",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FUNDED_UNFUNDED",
+        "DataType": "TEXT",
+        "Definition": "funded unfunded",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SUPPORTS_HMDA_CRA",
+        "DataType": "TEXT",
+        "Definition": "supports hmda cra",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SWEEP_ELIGIBLE",
+        "DataType": "TEXT",
+        "Definition": "sweep eligible",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AMORTIZATION_END_DATE",
+        "DataType": "TEXT",
+        "Definition": "amortization end date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "COLSON_REPORT_INT_PAID_TO_DATE",
+        "DataType": "TEXT",
+        "Definition": "colson report int paid to date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LAST_INTEREST_TRANS_DATE",
+        "DataType": "TEXT",
+        "Definition": "last interest trans date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PREPAY_PENALTY_APPLIES",
+        "DataType": "TEXT",
+        "Definition": "prepay penalty applies",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CECL_LOAN_TEXT_1",
+        "DataType": "TEXT",
+        "Definition": "cecl loan text 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CECL_LOAN_TEXT_2",
+        "DataType": "TEXT",
+        "Definition": "cecl loan text 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CECL_LOAN_DATE_1",
+        "DataType": "TEXT",
+        "Definition": "cecl loan date 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CECL_LOAN_DATE_2",
+        "DataType": "TEXT",
+        "Definition": "cecl loan date 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FLOATING_RATE_IDX",
+        "DataType": "TEXT",
+        "Definition": "floating rate idx",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "HEDGE_CONTRACT_NUM",
+        "DataType": "TEXT",
+        "Definition": "hedge contract num",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REQUIRED_SECURITY_DESIGNATION",
+        "DataType": "TEXT",
+        "Definition": "required security designation",
+        "IsPrimaryKey": false
+      }
+    ]
+  },
+  {
+    "Entity": "CA_DETAIL_FACT",
+    "EntitySchema": "main",
+    "Definition": "The CA_DETAIL_FACT table captures detailed financial data related to customer accounts, including limits, fees, and usage metrics across various timeframes. It serves the business purpose of enabling financial analysis and reporting on customer credit limits, fee structures, and overall account performance, facilitating better risk management and decision-making.",
+    "Attributes": [
+      {
+        "Attribute": "CUSTOMER_KEY",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for each customer.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRODUCT_KEY",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for products in the database.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_KEY",
+        "DataType": "TEXT",
+        "Definition": "Identifier for limit-related data entries.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INVESTOR_KEY",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for each investor.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OWNER_KEY",
+        "DataType": "TEXT",
+        "Definition": "Identifier for the owner of the record.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MONTH_ID",
+        "DataType": "TEXT",
+        "Definition": "Identifier for the month (text format).",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_CURRENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "Currency code for transactions in text format.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "Maximum allowable amount in text format.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_WITHHELD",
+        "DataType": "TEXT",
+        "Definition": "Textual description of withheld limit amount.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_USED",
+        "DataType": "TEXT",
+        "Definition": "Amount of credit limit utilized.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_AVAILABLE",
+        "DataType": "TEXT",
+        "Definition": "limit available",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NUMBER_OF_LIMIT_EXPOSURE",
+        "DataType": "TEXT",
+        "Definition": "number of limit exposure",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_VALUE_OF_COLLATERAL",
+        "DataType": "TEXT",
+        "Definition": "limit value of collateral",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRINCIPAL_AMOUNT_DUE",
+        "DataType": "TEXT",
+        "Definition": "principal amount due",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CONTRACTUAL_OWNERSHIP_PCT",
+        "DataType": "TEXT",
+        "Definition": "contractual ownership pct",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TAKEN_DOWN_AMOUNT_MTD",
+        "DataType": "TEXT",
+        "Definition": "taken down amount mtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TAKEN_DOWN_AMOUNT_QTD",
+        "DataType": "TEXT",
+        "Definition": "taken down amount qtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TAKEN_DOWN_AMOUNT_YTD",
+        "DataType": "TEXT",
+        "Definition": "taken down amount ytd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TAKEN_DOWN_AMOUNT_ITD",
+        "DataType": "TEXT",
+        "Definition": "taken down amount itd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AVERAGE_LIMIT_AMOUNT_MTD",
+        "DataType": "TEXT",
+        "Definition": "average limit amount mtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AVERAGE_LIMIT_AMOUNT_QTD",
+        "DataType": "TEXT",
+        "Definition": "average limit amount qtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AVERAGE_LIMIT_AMOUNT_YTD",
+        "DataType": "TEXT",
+        "Definition": "average limit amount ytd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AVERAGE_LIMIT_AMOUNT_ITD",
+        "DataType": "TEXT",
+        "Definition": "average limit amount itd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AVERAGE_WITHHELD_AMOUNT_MTD",
+        "DataType": "TEXT",
+        "Definition": "average withheld amount mtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AVERAGE_WITHHELD_AMOUNT_QTD",
+        "DataType": "TEXT",
+        "Definition": "average withheld amount qtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AVERAGE_WITHHELD_AMOUNT_YTD",
+        "DataType": "TEXT",
+        "Definition": "average withheld amount ytd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AVERAGE_WITHHELD_AMOUNT_ITD",
+        "DataType": "TEXT",
+        "Definition": "average withheld amount itd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AVERAGE_USED_AMOUNT_MTD",
+        "DataType": "TEXT",
+        "Definition": "average used amount mtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AVERAGE_USED_AMOUNT_QTD",
+        "DataType": "TEXT",
+        "Definition": "average used amount qtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AVERAGE_USED_AMOUNT_YTD",
+        "DataType": "TEXT",
+        "Definition": "average used amount ytd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AVERAGE_USED_AMOUNT_ITD",
+        "DataType": "TEXT",
+        "Definition": "average used amount itd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_STATUS_DATE",
+        "DataType": "TEXT",
+        "Definition": "fee status date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_ACCRUAL_RATE",
+        "DataType": "TEXT",
+        "Definition": "fee accrual rate",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_LOW_BALANCE_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "fee low balance amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_HIGH_BALANCE_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "fee high balance amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_DAILY_ACRL_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "fee daily acrl amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_PAYOFF_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "fee payoff amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_CREDITS_APPLIED_TODAY",
+        "DataType": "TEXT",
+        "Definition": "fee credits applied today",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_BASE_BALANCE",
+        "DataType": "TEXT",
+        "Definition": "fee base balance",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_ADJUSTED_BASE_BALANCE",
+        "DataType": "TEXT",
+        "Definition": "fee adjusted base balance",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_CHARGED_MTD",
+        "DataType": "TEXT",
+        "Definition": "fees charged mtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_CHARGED_QTD",
+        "DataType": "TEXT",
+        "Definition": "fees charged qtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_CHARGED_YTD",
+        "DataType": "TEXT",
+        "Definition": "fees charged ytd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_CHARGED_ITD",
+        "DataType": "TEXT",
+        "Definition": "fees charged itd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_EARNED_MTD",
+        "DataType": "TEXT",
+        "Definition": "fees earned mtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_EARNED_QTD",
+        "DataType": "TEXT",
+        "Definition": "fees earned qtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_EARNED_YTD",
+        "DataType": "TEXT",
+        "Definition": "fees earned ytd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_EARNED_ITD",
+        "DataType": "TEXT",
+        "Definition": "fees earned itd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_PAID_MTD",
+        "DataType": "TEXT",
+        "Definition": "fees paid mtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_PAID_QTD",
+        "DataType": "TEXT",
+        "Definition": "fees paid qtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_PAID_YTD",
+        "DataType": "TEXT",
+        "Definition": "fees paid ytd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_PAID_ITD",
+        "DataType": "TEXT",
+        "Definition": "fees paid itd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_WAIVED_ADJUSTED_MTD",
+        "DataType": "TEXT",
+        "Definition": "fees waived adjusted mtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_WAIVED_ADJUSTED_QTD",
+        "DataType": "TEXT",
+        "Definition": "fees waived adjusted qtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_WAIVED_ADJUSTED_YTD",
+        "DataType": "TEXT",
+        "Definition": "fees waived adjusted ytd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_WAIVED_ADJUSTED_ITD",
+        "DataType": "TEXT",
+        "Definition": "fees waived adjusted itd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INCEPTION_ACCRUED_BALANCE_MTD",
+        "DataType": "TEXT",
+        "Definition": "inception accrued balance mtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INCEPTION_ACCRUED_BALANCE_QTD",
+        "DataType": "TEXT",
+        "Definition": "inception accrued balance qtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INCEPTION_ACCRUED_BALANCE_YTD",
+        "DataType": "TEXT",
+        "Definition": "inception accrued balance ytd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INCEPTION_ACCRUED_BALANCE_ITD",
+        "DataType": "TEXT",
+        "Definition": "inception accrued balance itd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_ARMORTIZED_MTD",
+        "DataType": "TEXT",
+        "Definition": "fees armortized mtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_ARMORTIZED_QTD",
+        "DataType": "TEXT",
+        "Definition": "fees armortized qtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_ARMORTIZED_YTD",
+        "DataType": "TEXT",
+        "Definition": "fees armortized ytd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_ARMORTIZED_ITD",
+        "DataType": "TEXT",
+        "Definition": "fees armortized itd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BILLED_AND_UNPAID",
+        "DataType": "TEXT",
+        "Definition": "billed and unpaid",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PAST_DUE_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "past due amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NUM_OF_UNPAID_FEE_SEGMENTS",
+        "DataType": "TEXT",
+        "Definition": "num of unpaid fee segments",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NUM_OF_EVENTS_FOR_THIS_FEE",
+        "DataType": "TEXT",
+        "Definition": "num of events for this fee",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_ACTUAL_DAILY_ACCRUAL_AMT",
+        "DataType": "TEXT",
+        "Definition": "fee actual daily accrual amt",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CURRENT_PERCENTAGE_OF",
+        "DataType": "TEXT",
+        "Definition": "current percentage of",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_SUSPENSED_DEFERRED_MTD",
+        "DataType": "TEXT",
+        "Definition": "fees suspensed deferred mtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_SUSPENSED_DEFERRED_QTD",
+        "DataType": "TEXT",
+        "Definition": "fees suspensed deferred qtd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_SUSPENSED_DEFERRED_YTD",
+        "DataType": "TEXT",
+        "Definition": "fees suspensed deferred ytd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEES_SUSPENSED_DEFERRED_ITD",
+        "DataType": "TEXT",
+        "Definition": "fees suspensed deferred itd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_CURRENT_PAYOFF_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "fee current payoff amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FIXED_PCT_OF_BASE_BALANCE",
+        "DataType": "TEXT",
+        "Definition": "fixed pct of base balance",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FIXED_TOTAL_TO_AMORTIZE",
+        "DataType": "TEXT",
+        "Definition": "fixed total to amortize",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FIXED_TOTAL_UNAMORTIZED",
+        "DataType": "TEXT",
+        "Definition": "fixed total unamortized",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FIXED_TOTAL_AMORTIZED",
+        "DataType": "TEXT",
+        "Definition": "fixed total amortized",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FIXED_DATE_TO_AMORTIZE_TO",
+        "DataType": "TEXT",
+        "Definition": "fixed date to amortize to",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FIXED_DAILY_EARNINGS",
+        "DataType": "TEXT",
+        "Definition": "fixed daily earnings",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NUMBER_OF_ACCRUAL_FEE_SEGMENTS",
+        "DataType": "TEXT",
+        "Definition": "number of accrual fee segments",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NUMBER_OF_FIXED_FEE_SEGMENTS",
+        "DataType": "TEXT",
+        "Definition": "number of fixed fee segments",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_ADJUSTED_BALANCE_1",
+        "DataType": "TEXT",
+        "Definition": "fee adjusted balance 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_ADJUSTED_BALANCE_2",
+        "DataType": "TEXT",
+        "Definition": "fee adjusted balance 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_FEE_BALANCE",
+        "DataType": "TEXT",
+        "Definition": "limit fee balance",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FINANCIAL_FX_RATE",
+        "DataType": "TEXT",
+        "Definition": "financial fx rate",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FINANCIAL_FX_OPERATOR",
+        "DataType": "TEXT",
+        "Definition": "financial fx operator",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INTEREST_MARGIN",
+        "DataType": "TEXT",
+        "Definition": "interest margin",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TOTAL_MARGIN",
+        "DataType": "TEXT",
+        "Definition": "total margin",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_FX_TOLERANCE_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "original fx tolerance amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CURRENT_FX_TOLERANCE_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "current fx tolerance amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_LIMIT_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "original limit amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_ID",
+        "DataType": "TEXT",
+        "Definition": "portfolio id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AMT_OF_LMT_CHGS_TODAY",
+        "DataType": "TEXT",
+        "Definition": "amt of lmt chgs today",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AMT_OF_WITHHELD_CHGS_TODAY",
+        "DataType": "TEXT",
+        "Definition": "amt of withheld chgs today",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AMT_OF_USAGE_CHGS_TODAY",
+        "DataType": "TEXT",
+        "Definition": "amt of usage chgs today",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_LMT_WITHHELD_AMT",
+        "DataType": "TEXT",
+        "Definition": "original lmt withheld amt",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_MEMO_AVAILABLE_AMT",
+        "DataType": "TEXT",
+        "Definition": "original memo available amt",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_FEE_USER_BAL",
+        "DataType": "TEXT",
+        "Definition": "original fee user bal",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PROBABILITY_OF_DEFAULT",
+        "DataType": "TEXT",
+        "Definition": "probability of default",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOSS_GIVEN_DEFAULT",
+        "DataType": "TEXT",
+        "Definition": "loss given default",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "EXPOSURE_AT_DEFAULT",
+        "DataType": "TEXT",
+        "Definition": "exposure at default",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REMAINING_MATURITY",
+        "DataType": "TEXT",
+        "Definition": "remaining maturity",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MINIMUM_ADVANCE_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "minimum advance amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MAXIMUM_ADVANCE_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "maximum advance amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ADVANCE_DENOMINATION_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "advance denomination amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MINIMUM_PAYDOWN_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "minimum paydown amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MAXIMUM_PAYDOWN_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "maximum paydown amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MINIMUM_PAYDOWN_DENOMINATION",
+        "DataType": "TEXT",
+        "Definition": "minimum paydown denomination",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PROCESSING_GROUP_CODE",
+        "DataType": "TEXT",
+        "Definition": "processing group code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_STATUS_CODE",
+        "DataType": "TEXT",
+        "Definition": "limit status code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_STATUS_DATE",
+        "DataType": "TEXT",
+        "Definition": "limit status date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LIMIT_STATUS_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "limit status description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MAX_NO_OF_CONTRACTS",
+        "DataType": "TEXT",
+        "Definition": "max no of contracts",
+        "IsPrimaryKey": false
+      }
+    ]
+  },
+  {
+    "Entity": "MONTH_DIMENSION",
+    "EntitySchema": "main",
+    "Definition": "The MONTH_DIMENSION table contains detailed information about months, quarters, and years, including their identifiers, descriptions, and time spans. This table serves the business purpose of providing a structured reference for time-related data analysis, enabling users to categorize and aggregate data by different time periods for reporting and decision-making.",
+    "Attributes": [
+      {
+        "Attribute": "MONTH_ID",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for each month.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MONTH_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "Description of the month (e.g., January).",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MONTH_TIMESPAN",
+        "DataType": "TEXT",
+        "Definition": "Duration of the month in textual format.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PERIOD_END_DATE",
+        "DataType": "TEXT",
+        "Definition": "End date of the reporting period.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "QUARTER_ID",
+        "DataType": "TEXT",
+        "Definition": "Identifier for the fiscal quarter.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "QUARTER_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "Description of the quarter (e.g., Q1, Q2).",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "QUARTER_TIMESPAN",
+        "DataType": "TEXT",
+        "Definition": "Describes the time span of each quarter.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "QUARTER_END_DATE",
+        "DataType": "TEXT",
+        "Definition": "End date of the quarter (formatted as text).",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "YEAR_ID",
+        "DataType": "TEXT",
+        "Definition": "Identifier for the year in text format.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "YEAR_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "Describes the year in textual format.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "YEAR_TIMESPAN",
+        "DataType": "TEXT",
+        "Definition": "year timespan",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "YEAR_END_DATE",
+        "DataType": "TEXT",
+        "Definition": "year end date",
+        "IsPrimaryKey": false
+      }
+    ]
+  },
+  {
+    "Entity": "INVESTOR_DIMENSION",
+    "EntitySchema": "main",
+    "Definition": "The INVESTOR_DIMENSION table contains detailed information about various types of investors, including their classifications, account types, and domains. This table serves the business purpose of enabling comprehensive analysis and reporting on investor profiles, facilitating targeted marketing strategies and investment management decisions.",
+    "Attributes": [
+      {
+        "Attribute": "INVESTOR_KEY",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for each investor.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INVESTOR_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "Code representing the type of investor.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INVESTOR_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "Description of the investor type.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INVESTOR_ACCOUNT_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "Type of investor account classification.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INVESTOR_ACCOUNT_TYPE_DESC",
+        "DataType": "TEXT",
+        "Definition": "Description of investor account types.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INVESTOR_CLASS_CODE",
+        "DataType": "TEXT",
+        "Definition": "Code representing the classification of investors.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INVESTOR_CLASS_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "Description of investor class type.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INVESTOR_DOMAIN_CODE",
+        "DataType": "TEXT",
+        "Definition": "Code representing the investor's domain.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INVESTOR_DOMAIN_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "Description of investor's domain expertise.",
+        "IsPrimaryKey": false
+      }
+    ]
+  },
+  {
+    "Entity": "CL_DETAIL_FACT",
+    "EntitySchema": "main",
+    "Definition": "The CL_DETAIL_FACT table captures detailed financial data related to loans, including information on principal balances, interest rates, ownership percentages, and various account statuses. This table serves the business purpose of facilitating comprehensive loan performance analysis, risk assessment, and financial reporting for stakeholders involved in loan management and investment.",
+    "Attributes": [
+      {
+        "Attribute": "PRODUCT_KEY",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for products in the database.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_KEY",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for each customer.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INVESTOR_KEY",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for each investor.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OWNER_KEY",
+        "DataType": "TEXT",
+        "Definition": "Identifier for the owner of the record.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MONTH_ID",
+        "DataType": "TEXT",
+        "Definition": "Identifier for the month (text format).",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_CURRENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "Currency code for the loan transaction.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OWNERSHIP_PERCENT",
+        "DataType": "TEXT",
+        "Definition": "Percentage of ownership in text format.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_CURRENCY",
+        "DataType": "TEXT",
+        "Definition": "Currency used in the investment portfolio.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CURRENT_PRINCIPAL_BALANCE",
+        "DataType": "TEXT",
+        "Definition": "Current principal balance of the account.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INCOME_RECAPTURED_TO_PRIN_BAL",
+        "DataType": "TEXT",
+        "Definition": "Recaptured income applied to principal balance.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CHARGE_OFF_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "charge off amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRINCIPAL_AMOUNT_WRITTEN_DOWN",
+        "DataType": "TEXT",
+        "Definition": "principal amount written down",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INTEREST_BALANCE",
+        "DataType": "TEXT",
+        "Definition": "interest balance",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_BALANCE",
+        "DataType": "TEXT",
+        "Definition": "fee balance",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OTHER_BALANCES",
+        "DataType": "TEXT",
+        "Definition": "other balances",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DAILY_INTEREST",
+        "DataType": "TEXT",
+        "Definition": "daily interest",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INTERESET_YIELD_RATE",
+        "DataType": "TEXT",
+        "Definition": "intereset yield rate",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BILLED_AND_UNPAID_PRINCIPAL",
+        "DataType": "TEXT",
+        "Definition": "billed and unpaid principal",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PREPAID_PRINCIPAL",
+        "DataType": "TEXT",
+        "Definition": "prepaid principal",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PAST_DUE_PRINCIPAL_ACTUAL",
+        "DataType": "TEXT",
+        "Definition": "past due principal actual",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REVOLVING_ACCOUNT_LIMIT",
+        "DataType": "TEXT",
+        "Definition": "revolving account limit",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REVOLVING_ACCOUNT_AVAILABLE",
+        "DataType": "TEXT",
+        "Definition": "revolving account available",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NUMBER_ACCRUAL_SCHEDULES",
+        "DataType": "TEXT",
+        "Definition": "number accrual schedules",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NUMBER_FIXED_SCHEDULES",
+        "DataType": "TEXT",
+        "Definition": "number fixed schedules",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NUMBER_OF_PROBLEM_TRACKING_SEG",
+        "DataType": "TEXT",
+        "Definition": "number of problem tracking seg",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SCHEDULED_PRINCIPAL_BALANCE",
+        "DataType": "TEXT",
+        "Definition": "scheduled principal balance",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PAST_DUE_INTEREST_ACTUAL",
+        "DataType": "TEXT",
+        "Definition": "past due interest actual",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TOTAL_PAST_DUE_ACTUAL",
+        "DataType": "TEXT",
+        "Definition": "total past due actual",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INCOME_RECAPTURED_TO_CHARGE_OF",
+        "DataType": "TEXT",
+        "Definition": "income recaptured to charge of",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_FX_RATE",
+        "DataType": "TEXT",
+        "Definition": "portfolio fx rate",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_FX_OPERATOR",
+        "DataType": "TEXT",
+        "Definition": "portfolio fx operator",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_CURRENCY_FX_RATE",
+        "DataType": "TEXT",
+        "Definition": "ca currency fx rate",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_CURRENCY_FX_OPERATOR",
+        "DataType": "TEXT",
+        "Definition": "ca currency fx operator",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DEAL_CURRENCY_FX_RATE",
+        "DataType": "TEXT",
+        "Definition": "deal currency fx rate",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DEAL_CURRENCY_FX_OPERATOR",
+        "DataType": "TEXT",
+        "Definition": "deal currency fx operator",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MATURITY_DATE",
+        "DataType": "TEXT",
+        "Definition": "maturity date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "EFFECTIVE_DATE",
+        "DataType": "TEXT",
+        "Definition": "effective date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CURRENT_USER_DEFINED_BALANCE_1",
+        "DataType": "TEXT",
+        "Definition": "current user defined balance 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CURRENT_USER_DEFINED_BALANCE_2",
+        "DataType": "TEXT",
+        "Definition": "current user defined balance 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_CURRENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "ca currency code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SEQUENCE_NO",
+        "DataType": "TEXT",
+        "Definition": "sequence no",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BEGINNING_PRINCIPAL_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "beginning principal amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_ID",
+        "DataType": "TEXT",
+        "Definition": "portfolio id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRIN_CHANGES_MEMO_POSTED_TODAY",
+        "DataType": "TEXT",
+        "Definition": "prin changes memo posted today",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_ACCT_INT_RATE_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "loan acct int rate type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_ACCT_INT_RATE_TYPE_DESC",
+        "DataType": "TEXT",
+        "Definition": "loan acct int rate type desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_CONDITION_CODE",
+        "DataType": "TEXT",
+        "Definition": "gl condition code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REPORTING_ACCT_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "reporting acct type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REPORTING_ACCT_TYPE_DESC",
+        "DataType": "TEXT",
+        "Definition": "reporting acct type desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BOOKING_DATE",
+        "DataType": "TEXT",
+        "Definition": "booking date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ACCOUNT_MATURITY_DATE",
+        "DataType": "TEXT",
+        "Definition": "account maturity date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LAST_EFFECTIVE_DATE",
+        "DataType": "TEXT",
+        "Definition": "last effective date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CORRESPONDENCE_INSTRUCTION_ID",
+        "DataType": "TEXT",
+        "Definition": "correspondence instruction id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NEXT_BILLING_NOTIFICATION_DATE",
+        "DataType": "TEXT",
+        "Definition": "next billing notification date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ACCOUNTING_STATUS_CODE",
+        "DataType": "TEXT",
+        "Definition": "accounting status code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DATE_ACCOUNT_UPDATED_TO",
+        "DataType": "TEXT",
+        "Definition": "date account updated to",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "EVER_ACCRUED_ON_PAST_DUE_INVS",
+        "DataType": "TEXT",
+        "Definition": "ever accrued on past due invs",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_USED_LATE_CHARGES",
+        "DataType": "TEXT",
+        "Definition": "loan used late charges",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_ACRLS_CONTAIN_MULTI_CURR",
+        "DataType": "TEXT",
+        "Definition": "loan acrls contain multi curr",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FUNDS_DUE_FROM_CUST_ID",
+        "DataType": "TEXT",
+        "Definition": "funds due from cust id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FUNDS_DUE_TO_CUST_ID",
+        "DataType": "TEXT",
+        "Definition": "funds due to cust id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ACCOUNT_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "account type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ACCOUNT_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "account type description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NET_TOTAL_BILLING_RATE",
+        "DataType": "TEXT",
+        "Definition": "net total billing rate",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_GL_BALANCE",
+        "DataType": "TEXT",
+        "Definition": "original gl balance",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ADJ_TO_GL_BAL_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "adj to gl bal amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SCHED_PRIN_CHANGES_MEMO_POSTED",
+        "DataType": "TEXT",
+        "Definition": "sched prin changes memo posted",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SCHED_PRIN_BAL_AND_ACTUAL_DIFF",
+        "DataType": "TEXT",
+        "Definition": "sched prin bal and actual diff",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PAST_DUE_PRIN_ACTUAL_ADJ",
+        "DataType": "TEXT",
+        "Definition": "past due prin actual adj",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PAST_DUE_INTEREST_ACTUAL_ADJ",
+        "DataType": "TEXT",
+        "Definition": "past due interest actual adj",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TOT_PAST_DUE_GRACE_ADJ_ADJUST",
+        "DataType": "TEXT",
+        "Definition": "tot past due grace adj adjust",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PAST_DUE_PRIN_GRACE_ADJ_ADJUST",
+        "DataType": "TEXT",
+        "Definition": "past due prin grace adj adjust",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TOTAL_PAST_DUE_ACTUAL_ADJ",
+        "DataType": "TEXT",
+        "Definition": "total past due actual adj",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PAST_DUE_INT_GRACE_ADJ_ADJUST",
+        "DataType": "TEXT",
+        "Definition": "past due int grace adj adjust",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "POSTED_CA_USAGE_AMT",
+        "DataType": "TEXT",
+        "Definition": "posted ca usage amt",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "POSTED_DEAL_USAGE_AMT",
+        "DataType": "TEXT",
+        "Definition": "posted deal usage amt",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_DISCOUNTED_PRINCIPAL",
+        "DataType": "TEXT",
+        "Definition": "original discounted principal",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DISCOUNTED_PRINCIPAL",
+        "DataType": "TEXT",
+        "Definition": "discounted principal",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIG_REVOLVING_ACCOUNT_LIMIT",
+        "DataType": "TEXT",
+        "Definition": "orig revolving account limit",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NET_INTEREST_BILLING_RATE",
+        "DataType": "TEXT",
+        "Definition": "net interest billing rate",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CURRENT_GL_BALANCE",
+        "DataType": "TEXT",
+        "Definition": "current gl balance",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CAPITALIZED_INCOME_AMOUNT",
+        "DataType": "TEXT",
+        "Definition": "capitalized income amount",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIG_ESCROW_BAL",
+        "DataType": "TEXT",
+        "Definition": "orig escrow bal",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CURR_ESCROW_BAL",
+        "DataType": "TEXT",
+        "Definition": "curr escrow bal",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BILLED_AND_UNPAID_ESCROW",
+        "DataType": "TEXT",
+        "Definition": "billed and unpaid escrow",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PREPAID_ESCROW",
+        "DataType": "TEXT",
+        "Definition": "prepaid escrow",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ESCROW_CHANGES_MEMO_POST_TODAY",
+        "DataType": "TEXT",
+        "Definition": "escrow changes memo post today",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_STATUS",
+        "DataType": "TEXT",
+        "Definition": "loan status",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LOAN_ELIGIBLE_FOR_ASGMT",
+        "DataType": "TEXT",
+        "Definition": "loan eligible for asgmt",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_USER_DEFINED_BAL_1",
+        "DataType": "TEXT",
+        "Definition": "original user defined bal 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_USER_DEFINED_BAL_2",
+        "DataType": "TEXT",
+        "Definition": "original user defined bal 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "IS_PROFILE",
+        "DataType": "TEXT",
+        "Definition": "is profile",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PROCESSING_GROUP_CODE",
+        "DataType": "TEXT",
+        "Definition": "processing group code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ESCROW_SHORTAGE_BAL",
+        "DataType": "TEXT",
+        "Definition": "escrow shortage bal",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STANDARD_REFERENCE_ID",
+        "DataType": "TEXT",
+        "Definition": "standard reference id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ACCT_OWNERSHIP_PCTG",
+        "DataType": "TEXT",
+        "Definition": "acct ownership pctg",
+        "IsPrimaryKey": false
+      }
+    ]
+  },
+  {
+    "Entity": "DM_LOG",
+    "EntitySchema": "main",
+    "Definition": "The DM_LOG table stores information about data management activities, specifically logging the names of files processed and the corresponding count of records within each file. This table serves the purpose of tracking data processing operations, enabling businesses to monitor data integrity and performance.",
+    "Attributes": [
+      {
+        "Attribute": "FILE_NAME",
+        "DataType": "TEXT",
+        "Definition": "Name of the log file.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECORD_COUNT",
+        "DataType": "TEXT",
+        "Definition": "Count of records in log entries.",
+        "IsPrimaryKey": false
+      }
+    ]
+  },
+  {
+    "Entity": "CURRENCY_DIMENSION",
+    "EntitySchema": "main",
+    "Definition": "The CURRENCY_DIMENSION table stores information about currency exchange rates, including the source and target currency codes, their descriptions, and the applicable exchange rates for specific months. This table serves the business purpose of facilitating currency conversion and financial analysis by providing essential data for calculating and comparing currency values across different time periods.",
+    "Attributes": [
+      {
+        "Attribute": "FROM_CURRENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "Currency code for the source currency.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TO_CURRENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "\"Target currency code for conversions.\"",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CURRENCY_MONTH_ID",
+        "DataType": "TEXT",
+        "Definition": "Identifier for currency month records.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FROM_CURRENCY_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "Description of the source currency.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "TO_CURRENCY_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "Description of the target currency.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CURRENCY_RATE_GROUP",
+        "DataType": "TEXT",
+        "Definition": "Group classification for currency exchange rates.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CRNCY_EXCHANGE_RATE",
+        "DataType": "TEXT",
+        "Definition": "Currency exchange rate as text value.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OPERATION_INDICATOR",
+        "DataType": "TEXT",
+        "Definition": "Indicator for currency operation status.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CONVERSION_RATE",
+        "DataType": "TEXT",
+        "Definition": "Textual representation of currency conversion rates.",
+        "IsPrimaryKey": false
+      }
+    ]
+  },
+  {
+    "Entity": "CA_PRODUCT_DIMENSION",
+    "EntitySchema": "main",
+    "Definition": "The CA_PRODUCT_DIMENSION table contains detailed information about various financial products, including their characteristics, risk ratings, currency details, and associated customer and portfolio data. This table serves the business purpose of enabling comprehensive analysis and management of financial products, facilitating risk assessment, compliance, and reporting within the organization.",
+    "Attributes": [
+      {
+        "Attribute": "PRODUCT_KEY",
+        "DataType": "TEXT",
+        "Definition": "Unique identifier for each product.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PRODUCT_MONTH_ID",
+        "DataType": "TEXT",
+        "Definition": "Identifier for product's monthly data records.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_ID",
+        "DataType": "TEXT",
+        "Definition": "Identifier for product portfolio.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "Description of the product portfolio.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "Product identification number in text format.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DEAL_PORTFOLIO_ID",
+        "DataType": "TEXT",
+        "Definition": "Identifier for the deal portfolio.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DEAL_CUSTOMER_ID",
+        "DataType": "TEXT",
+        "Definition": "Identifier for the customer associated with the deal.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DEAL_CA_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "\"Deal identification number for California products.\"",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_ACCOUNT_STRUCTURE",
+        "DataType": "TEXT",
+        "Definition": "Account structure details for product categorization.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_ACCOUNT_STRUCTURE_DESC",
+        "DataType": "TEXT",
+        "Definition": "Description of account structure for products.",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_LENDER_TYPE",
+        "DataType": "TEXT",
+        "Definition": "customer lender type",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OUR_SHARE_LENDER_TYPE",
+        "DataType": "TEXT",
+        "Definition": "our share lender type",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "ca description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_NUMBER_OF_AGENT_BANK",
+        "DataType": "TEXT",
+        "Definition": "customer number of agent bank",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MULTI_CURRENCY_FEES",
+        "DataType": "TEXT",
+        "Definition": "multi currency fees",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_BASE_CURRENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "portfolio base currency code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_BASE_CURRENCY_DESC",
+        "DataType": "TEXT",
+        "Definition": "portfolio base currency desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_CURRENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "ca currency code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_CURRENCY_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "ca currency description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FINANCIAL_FX_RATE_GROUP",
+        "DataType": "TEXT",
+        "Definition": "financial fx rate group",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "ca type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "ca type description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_ADVISED",
+        "DataType": "TEXT",
+        "Definition": "customer advised",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BOOKING_CLASS_CODE",
+        "DataType": "TEXT",
+        "Definition": "booking class code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BOOKING_CLASS_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "booking class description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GENERAL_PURPOSE_CODE",
+        "DataType": "TEXT",
+        "Definition": "general purpose code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GENERAL_PURPOSE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "general purpose description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_OVERALL_STATUS_CODE",
+        "DataType": "TEXT",
+        "Definition": "ca overall status code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OVERALL_STATUS_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "overall status description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_HLT_CLASSIFICATION",
+        "DataType": "TEXT",
+        "Definition": "ca hlt classification",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "IS_LEGALLY_BINDING",
+        "DataType": "TEXT",
+        "Definition": "is legally binding",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MULTI_CURRENCY_CA",
+        "DataType": "TEXT",
+        "Definition": "multi currency ca",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SUBORDINATED_CA",
+        "DataType": "TEXT",
+        "Definition": "subordinated ca",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CAPITAL_CLASS_CODE",
+        "DataType": "TEXT",
+        "Definition": "capital class code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CAPITAL_CLASS_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "capital class description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CREDIT_CONVERSION_FACTOR_CODE",
+        "DataType": "TEXT",
+        "Definition": "credit conversion factor code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CREDIT_CONVERSION_FACTOR_DESC",
+        "DataType": "TEXT",
+        "Definition": "credit conversion factor desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINATION_CODE",
+        "DataType": "TEXT",
+        "Definition": "origination code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINATION_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "origination description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SHARED_NATIONAL_CREDIT_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "shared national credit number",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INTERNAL_CA_REFERENCE_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "internal ca reference number",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "EXTERNAL_CA_REFERENCE_NUMBER",
+        "DataType": "TEXT",
+        "Definition": "external ca reference number",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DATE_CONVERTIBLE_TO_TERM",
+        "DataType": "TEXT",
+        "Definition": "date convertible to term",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FINAL_AVAILABILITY_DATE",
+        "DataType": "TEXT",
+        "Definition": "final availability date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CURRENT_EXPIRATION_DATE",
+        "DataType": "TEXT",
+        "Definition": "current expiration date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "NEXT_CA_REVIEW_DATE",
+        "DataType": "TEXT",
+        "Definition": "next ca review date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LAST_REVIEW_DATE",
+        "DataType": "TEXT",
+        "Definition": "last review date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LAST_EXPIRATION_DATE",
+        "DataType": "TEXT",
+        "Definition": "last expiration date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LAST_RENEWAL_DATE",
+        "DataType": "TEXT",
+        "Definition": "last renewal date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LAST_APPROVAL_DATE",
+        "DataType": "TEXT",
+        "Definition": "last approval date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RISK_REVIEW_FREQUENCY_CODE",
+        "DataType": "TEXT",
+        "Definition": "risk review frequency code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RISK_REVIEW_FREQUENCY_DESC",
+        "DataType": "TEXT",
+        "Definition": "risk review frequency desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_INTERNAL_RISK_RATING_CODE",
+        "DataType": "TEXT",
+        "Definition": "ca internal risk rating code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_INTERNAL_RISK_RATING_DESC",
+        "DataType": "TEXT",
+        "Definition": "ca internal risk rating desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CREDIT_REVIEW_RISK_RATING_CODE",
+        "DataType": "TEXT",
+        "Definition": "credit review risk rating code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CREDIT_REVIEW_RISK_RATING_DESC",
+        "DataType": "TEXT",
+        "Definition": "credit review risk rating desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REGULATORY_RISK_RATING_CODE",
+        "DataType": "TEXT",
+        "Definition": "regulatory risk rating code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REGULATORY_RISK_RATING_DESC",
+        "DataType": "TEXT",
+        "Definition": "regulatory risk rating desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "COUNTRY_CODE_OF_EXPOSURE_RISK",
+        "DataType": "TEXT",
+        "Definition": "country code of exposure risk",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "COUNTRY_OF_EXPOSURE_RISK_DESC",
+        "DataType": "TEXT",
+        "Definition": "country of exposure risk desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OFFICER_RISK_RATING_DATE",
+        "DataType": "TEXT",
+        "Definition": "officer risk rating date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CREDIT_REVIEW_RISK_RATING_DATE",
+        "DataType": "TEXT",
+        "Definition": "credit review risk rating date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REGULATOR_RISK_RATING_DATE",
+        "DataType": "TEXT",
+        "Definition": "regulator risk rating date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CURRENT_OFFICER_CODE",
+        "DataType": "TEXT",
+        "Definition": "current officer code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CURRENT_OFFICER_NAME",
+        "DataType": "TEXT",
+        "Definition": "current officer name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_GL_UNIT_CODE",
+        "DataType": "TEXT",
+        "Definition": "ca gl unit code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_GL_UNIT_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "ca gl unit description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SERVICING_UNIT_CODE",
+        "DataType": "TEXT",
+        "Definition": "servicing unit code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SERVICING_UNIT_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "servicing unit description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SERVICING_UNIT_SECTION_CODE",
+        "DataType": "TEXT",
+        "Definition": "servicing unit section code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SERVICING_UNIT_SECTION_DESC",
+        "DataType": "TEXT",
+        "Definition": "servicing unit section desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MISC_USER_DEFINED_CODE_1",
+        "DataType": "TEXT",
+        "Definition": "misc user defined code 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MISC_USER_DEFINED_CODE_2",
+        "DataType": "TEXT",
+        "Definition": "misc user defined code 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MISC_USER_DEFINED_CODE_3",
+        "DataType": "TEXT",
+        "Definition": "misc user defined code 3",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MISC_USER_DEFINED_CODE_4",
+        "DataType": "TEXT",
+        "Definition": "misc user defined code 4",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MISC_USER_DEFINED_DATE_1",
+        "DataType": "TEXT",
+        "Definition": "misc user defined date 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MISC_USER_DEFINED_DATE_2",
+        "DataType": "TEXT",
+        "Definition": "misc user defined date 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MISC_USER_DEFINED_DATE_3",
+        "DataType": "TEXT",
+        "Definition": "misc user defined date 3",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_STANDARD_REFERENCE_ID",
+        "DataType": "TEXT",
+        "Definition": "ca standard reference id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "EXTERNAL_RATING_ENTITY",
+        "DataType": "TEXT",
+        "Definition": "external rating entity",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "EXTERNAL_RATING",
+        "DataType": "TEXT",
+        "Definition": "external rating",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MTM_PRICING_INDEX",
+        "DataType": "TEXT",
+        "Definition": "mtm pricing index",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_CUSTOMER_ID",
+        "DataType": "TEXT",
+        "Definition": "ca customer id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PROCESSING_GROUP",
+        "DataType": "TEXT",
+        "Definition": "processing group",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MISC_USER_DEFINED_DESC_1",
+        "DataType": "TEXT",
+        "Definition": "misc user defined desc 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MISC_USER_DEFINED_DESC_2",
+        "DataType": "TEXT",
+        "Definition": "misc user defined desc 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MISC_USER_DEFINED_DESC_3",
+        "DataType": "TEXT",
+        "Definition": "misc user defined desc 3",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MISC_USER_DEFINED_DESC_4",
+        "DataType": "TEXT",
+        "Definition": "misc user defined desc 4",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "EFFECTIVE_DATE",
+        "DataType": "TEXT",
+        "Definition": "effective date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_ADMINISTRATIVE_USER_ID",
+        "DataType": "TEXT",
+        "Definition": "ca administrative user id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_ADMINISTRATIVE_USER_NAME",
+        "DataType": "TEXT",
+        "Definition": "ca administrative user name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_SERVICING_USER_ID",
+        "DataType": "TEXT",
+        "Definition": "ca servicing user id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_SERVICING_USER_NAME",
+        "DataType": "TEXT",
+        "Definition": "ca servicing user name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MASTER_USER_DEFINED_CODE_1",
+        "DataType": "TEXT",
+        "Definition": "master user defined code 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MASTER_USER_DEFINED_CODE_2",
+        "DataType": "TEXT",
+        "Definition": "master user defined code 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MASTER_USER_DEFINED_DATE_1",
+        "DataType": "TEXT",
+        "Definition": "master user defined date 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MASTER_USER_DEFINED_DATE_2",
+        "DataType": "TEXT",
+        "Definition": "master user defined date 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CAN_BE_TRADE_FLAG",
+        "DataType": "TEXT",
+        "Definition": "can be trade flag",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MTM_ELIGIBLE_FLAG",
+        "DataType": "TEXT",
+        "Definition": "mtm eligible flag",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MASTER_USER_DEFINED_DESC_1",
+        "DataType": "TEXT",
+        "Definition": "master user defined desc 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DEAL_CUSTOMER_NAME",
+        "DataType": "TEXT",
+        "Definition": "deal customer name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DATE_BOOKED_IN_SYSTEM",
+        "DataType": "TEXT",
+        "Definition": "date booked in system",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RECORD_ORIGINATION_DATE",
+        "DataType": "TEXT",
+        "Definition": "record origination date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "LAST_FILE_CHANGE_DATE",
+        "DataType": "TEXT",
+        "Definition": "last file change date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SECONDARY_OFFICER_CODE",
+        "DataType": "TEXT",
+        "Definition": "secondary officer code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SECONDARY_OFFICER_NAME",
+        "DataType": "TEXT",
+        "Definition": "secondary officer name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_TYPE_CODE",
+        "DataType": "TEXT",
+        "Definition": "portfolio type code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PORTFOLIO_TYPE_DESCRIPTION",
+        "DataType": "TEXT",
+        "Definition": "portfolio type description",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_APPROVAL_DATE",
+        "DataType": "TEXT",
+        "Definition": "original approval date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_EXPIRATION_DATE",
+        "DataType": "TEXT",
+        "Definition": "original expiration date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PREVIOUS_CA_PORTFOLIO_ID",
+        "DataType": "TEXT",
+        "Definition": "previous ca portfolio id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PREVIOUS_CA_OBLIGOR_NO",
+        "DataType": "TEXT",
+        "Definition": "previous ca obligor no",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PREVIOUS_CA_NO",
+        "DataType": "TEXT",
+        "Definition": "previous ca no",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINAL_APPROVING_OFFICER",
+        "DataType": "TEXT",
+        "Definition": "original approving officer",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MISC_USER_DEFINED_DATE_4",
+        "DataType": "TEXT",
+        "Definition": "misc user defined date 4",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GENERAL_INDUSTRY_CLASS_CODE",
+        "DataType": "TEXT",
+        "Definition": "general industry class code",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INCOMING_PMT_INSTR_AGENT",
+        "DataType": "TEXT",
+        "Definition": "incoming pmt instr agent",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "OUTGOING_PMT_INSTR_AGENT",
+        "DataType": "TEXT",
+        "Definition": "outgoing pmt instr agent",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AGENT_BANK_CORRESPONDENCE_ID",
+        "DataType": "TEXT",
+        "Definition": "agent bank correspondence id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "AGENT_BANK_ADDR_ID",
+        "DataType": "TEXT",
+        "Definition": "agent bank addr id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_OVERALL_STATUS_DATE",
+        "DataType": "TEXT",
+        "Definition": "ca overall status date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "BOOKING_SOURCE_CD",
+        "DataType": "TEXT",
+        "Definition": "booking source cd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "RISK_SCENARIO",
+        "DataType": "TEXT",
+        "Definition": "risk scenario",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_ACCT_OWNER_NO",
+        "DataType": "TEXT",
+        "Definition": "ca acct owner no",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STANDARD_REFERENCE_ID",
+        "DataType": "TEXT",
+        "Definition": "standard reference id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "PUBLISHED_NAME",
+        "DataType": "TEXT",
+        "Definition": "published name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CAN_BE_TRADED",
+        "DataType": "TEXT",
+        "Definition": "can be traded",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "MTM_ELIGIBLE",
+        "DataType": "TEXT",
+        "Definition": "mtm eligible",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STANDARD_REFERENCE_ID_TYPE",
+        "DataType": "TEXT",
+        "Definition": "standard reference id type",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ORIGINATING_OFFICE",
+        "DataType": "TEXT",
+        "Definition": "originating office",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_CUSTOMER_NAME",
+        "DataType": "TEXT",
+        "Definition": "ca customer name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CUSTOMER_NAME_OF_AGENT_BANK",
+        "DataType": "TEXT",
+        "Definition": "customer name of agent bank",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "STANDARD_REFERENCE_ID_TYPE_DSC",
+        "DataType": "TEXT",
+        "Definition": "standard reference id type dsc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GENERAL_INDUSTRY_CLASS_CD_DESC",
+        "DataType": "TEXT",
+        "Definition": "general industry class cd desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GENERATE_LINE_SHEET_ON_CHANGES",
+        "DataType": "TEXT",
+        "Definition": "generate line sheet on changes",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INDUSTRY_GROUP_ID",
+        "DataType": "TEXT",
+        "Definition": "industry group id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "INDUSTRY_GROUP_NAME",
+        "DataType": "TEXT",
+        "Definition": "industry group name",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SOURCE_RECORD_ID",
+        "DataType": "TEXT",
+        "Definition": "source record id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "DRAW_MUST_BE_UNDER_TMPLT",
+        "DataType": "TEXT",
+        "Definition": "draw must be under tmplt",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "EUROCLEAR_ASSIGNED_LI_NUM",
+        "DataType": "TEXT",
+        "Definition": "euroclear assigned li num",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FAC_CUSIP_REF_ID",
+        "DataType": "TEXT",
+        "Definition": "fac cusip ref id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FAC_CLEARPAR_ID",
+        "DataType": "TEXT",
+        "Definition": "fac clearpar id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SP_FAC_TYPE",
+        "DataType": "TEXT",
+        "Definition": "sp fac type",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SP_FAC_DESC",
+        "DataType": "TEXT",
+        "Definition": "sp fac desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CNTRY_LEGAL_JUR",
+        "DataType": "TEXT",
+        "Definition": "cntry legal jur",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FEE_SCH_ID_UNUSED_CMT_FEE",
+        "DataType": "TEXT",
+        "Definition": "fee sch id unused cmt fee",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "EUROCLEAR_NOTE",
+        "DataType": "TEXT",
+        "Definition": "euroclear note",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "COND_PRECEDENT",
+        "DataType": "TEXT",
+        "Definition": "cond precedent",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "ISIN_REFERENCE_ID",
+        "DataType": "TEXT",
+        "Definition": "isin reference id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FAC_ORIG_TRADE_TICKET",
+        "DataType": "TEXT",
+        "Definition": "fac orig trade ticket",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FAC_ORIG_COUNTERPARTY_ID",
+        "DataType": "TEXT",
+        "Definition": "fac orig counterparty id",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "COND_PRECEDENT_COMMENT",
+        "DataType": "TEXT",
+        "Definition": "cond precedent comment",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CLOSING_ACTION_CD",
+        "DataType": "TEXT",
+        "Definition": "closing action cd",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CLOSING_ACTION_DESC",
+        "DataType": "TEXT",
+        "Definition": "closing action desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_OVERALL_TARGET_CLOSING_DATE",
+        "DataType": "TEXT",
+        "Definition": "ca overall target closing date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CA_OVERALL_ACTUAL_CLOSING_DATE",
+        "DataType": "TEXT",
+        "Definition": "ca overall actual closing date",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_4",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 4",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_7",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 7",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_5",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 5",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_3",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 3",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_2",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 2",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_1",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "GL_UNIT_USER_DEFINED_6",
+        "DataType": "TEXT",
+        "Definition": "gl unit user defined 6",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FAC_PIK_TOGGLE_OPTION",
+        "DataType": "TEXT",
+        "Definition": "fac pik toggle option",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FAC_PIK_OPTION",
+        "DataType": "TEXT",
+        "Definition": "fac pik option",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FAC_DEAL_CUSIP",
+        "DataType": "TEXT",
+        "Definition": "fac deal cusip",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SUBJECT_TO_FATCA",
+        "DataType": "TEXT",
+        "Definition": "subject to fatca",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "SUBJECT_TO_FATCA_DESC",
+        "DataType": "TEXT",
+        "Definition": "subject to fatca desc",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CASHLINK_RESTRICTED",
+        "DataType": "TEXT",
+        "Definition": "cashlink restricted",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "FPML_RESTRICTED",
+        "DataType": "TEXT",
+        "Definition": "fpml restricted",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "WEBLINK_RESTRICTED",
+        "DataType": "TEXT",
+        "Definition": "weblink restricted",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CECL_FACL_TEXT_1",
+        "DataType": "TEXT",
+        "Definition": "cecl facl text 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "CECL_FACL_DATE_1",
+        "DataType": "TEXT",
+        "Definition": "cecl facl date 1",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "HEDGE_CONTRACT_NUM",
+        "DataType": "TEXT",
+        "Definition": "hedge contract num",
+        "IsPrimaryKey": false
+      },
+      {
+        "Attribute": "REQUIRED_SECURITY_DESIGNATION",
+        "DataType": "TEXT",
+        "Definition": "required security designation",
+        "IsPrimaryKey": false
+      }
+    ]
+  }
+]

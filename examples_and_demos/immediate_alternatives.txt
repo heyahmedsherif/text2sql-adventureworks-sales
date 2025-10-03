@@ -1,0 +1,41 @@
+
+💡 QUICK SOLUTION 1: Use Azure Cloud Shell
+==========================================
+1. In Azure Portal, click the Cloud Shell icon (>_) at the top
+2. This opens a command line in the browser
+3. Run these commands:
+
+# Upload the zip file first (use the upload button in Cloud Shell)
+# Then run:
+az functionapp deployment source config-zip \
+    --resource-group "FIS-Internal" \
+    --name "fisfunctionpoc" \
+    --src ./image_processing_functions.zip
+
+💡 QUICK SOLUTION 2: Manual Function Creation
+=============================================
+Since we have all the Python files, we can create functions manually:
+
+1. In your Function App, click "Functions" in left menu
+2. Click "+ Create" or "Add Function"
+3. Choose "HTTP trigger" template
+4. For each function (layout_analysis, figure_analysis, etc.):
+   • Create a new function
+   • Replace the generated code with our code
+   • Add the requirements
+
+💡 QUICK SOLUTION 3: PowerShell Upload (Windows/Mac)
+====================================================
+If you have PowerShell:
+1. Download publish profile from Function App
+2. Use PowerShell to deploy the ZIP
+
+💡 QUICK SOLUTION 4: Try Different Browsers
+===========================================
+• Try Microsoft Edge (best Azure compatibility)
+• Try Chrome incognito mode
+• Try Firefox
+• Sometimes different browsers show different Portal options
+
+🎯 RECOMMENDED RIGHT NOW:
+Try Azure Cloud Shell first - it's built into the Portal and always works!

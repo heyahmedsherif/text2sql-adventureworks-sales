@@ -1,0 +1,21 @@
+{
+  "question": "Provide a comprehensive analysis of our loan amounts and all internal portfolio risk ratings.  All Risk Ratings, broken down by risk category.",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 7.064634799957275,
+  "timestamp": "2025-08-19T23:00:02.771267",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "response_type": "disambiguation",
+    "clarification_questions": [
+      "Could you clarify which specific risk categories you would like to analyze? For example, are you referring to 'Internal Risk Rating Code' or 'Regular Risk Rating Code'?"
+    ],
+    "user_choices": [
+      "Internal Risk Rating Code",
+      "Regular Risk Rating Code"
+    ],
+    "success": true,
+    "explanation": "AutoGen is requesting clarification to provide better analysis",
+    "processing_time": 7.064634799957275,
+    "question": "Provide a comprehensive analysis of our loan amounts and all internal portfolio risk ratings.  All Risk Ratings, broken down by risk category."
+  }
+}

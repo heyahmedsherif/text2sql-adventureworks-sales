@@ -1,0 +1,19 @@
+{
+  "question": "What's our loan portfolio size?",
+  "approach": "AI-Powered (CLAUDE)",
+  "execution_time": 1.200606107711792,
+  "timestamp": "2025-10-03T13:54:18.469346",
+  "result": {
+    "method": "AI-Powered (CLAUDE)",
+    "sql_query": "SELECT SUM(TotalDue) AS TotalPortfolioSize\nFROM SalesOrderHeader;",
+    "results": [
+      {
+        "TotalPortfolioSize": 956303.5948999999
+      }
+    ],
+    "success": true,
+    "explanation": "AI-generated SQL using CLAUDE: 'What's our loan portfolio size?'",
+    "processing_time": 1.200606107711792,
+    "question": "What's our loan portfolio size?"
+  }
+}

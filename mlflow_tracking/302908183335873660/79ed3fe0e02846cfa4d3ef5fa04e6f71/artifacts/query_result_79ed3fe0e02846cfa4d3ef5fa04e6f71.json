@@ -1,0 +1,16 @@
+{
+  "question": "What are the total loan balances for all customers?",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 18.327735900878906,
+  "timestamp": "2025-08-19T14:07:19.730051",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "answer": "payload_type=<PayloadType.ANSWER_WITH_SOURCES: 'answer_with_sources'> payload_source=<PayloadSource.ASSISTANT: 'assistant'> body=Body(answer='The total loan balances for all customers is currently not available, as the query returned no results. This could indicate that there are no loans recorded in the database or that the data is not accessible at this time.', steps=[['What are the total loan balances for all customers?']], sources=[], follow_up_suggestions=['What is the total number of customers with loans?', 'Can we get a breakdown of loan balances by customer?', 'What are the average loan balances for customers with loans?'])",
+    "sql_query": null,
+    "results": null,
+    "success": true,
+    "explanation": "AutoGen processing completed",
+    "processing_time": 18.327735900878906,
+    "question": "What are the total loan balances for all customers?"
+  }
+}

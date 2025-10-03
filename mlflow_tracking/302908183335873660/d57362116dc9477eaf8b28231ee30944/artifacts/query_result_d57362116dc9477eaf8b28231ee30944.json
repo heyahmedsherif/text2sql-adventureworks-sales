@@ -1,0 +1,16 @@
+{
+  "question": "Test question for feedback verification",
+  "approach": "Test",
+  "execution_time": 0.1,
+  "timestamp": "2025-08-19T14:00:08.976554",
+  "result": {
+    "success": true,
+    "method": "Test",
+    "sql_query": "SELECT 1 as test",
+    "results": [
+      {
+        "test": 1
+      }
+    ]
+  }
+}

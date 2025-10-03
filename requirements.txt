@@ -1,0 +1,55 @@
+# FIS Banking Text2SQL System Requirements (Open Source Version)
+
+# Core Dependencies
+streamlit>=1.28.0
+pandas>=1.5.0
+numpy>=1.24.0
+python-dotenv>=1.0.0
+# sqlite3 is built-in with Python, no pip install needed
+
+# AI/ML Dependencies - OpenAI API and Claude (Anthropic)
+openai>=1.0.0
+anthropic>=0.40.0  # For Claude AI models
+
+# Vector Store - ChromaDB (replaces Azure AI Search)
+chromadb>=0.4.0
+chromadb-client>=0.4.0
+
+# MLOps Dependencies
+mlflow>=3.0.0
+
+# AutoGen Multi-Agent Dependencies
+autogen-core>=0.2.0
+autogen-agentchat>=0.2.0
+autogen-ext[openai]>=0.2.0
+pydantic>=2.0.0
+asyncio-mqtt>=0.11.0
+
+# HTTP/API Dependencies
+httpx>=0.24.0
+requests>=2.31.0
+aiohttp>=3.8.0
+
+# OCR and Document Processing (Open Source alternatives)
+# Optional: Uncomment if you need document processing
+# pytesseract>=0.3.10  # For OCR
+# pdf2image>=1.16.0  # For PDF processing
+# Pillow>=10.0.0  # For image processing
+# pypdf>=3.0.0  # For PDF text extraction
+
+# Utility Dependencies
+# pathlib, uuid, logging, datetime, and time are built-in Python modules
+
+# Development Dependencies (Optional)
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
+
+# Data Processing
+json5>=0.9.0
+PyYAML>=6.0.0
+
+# System Dependencies
+psutil>=5.9.0
+tabulate>=0.9.0

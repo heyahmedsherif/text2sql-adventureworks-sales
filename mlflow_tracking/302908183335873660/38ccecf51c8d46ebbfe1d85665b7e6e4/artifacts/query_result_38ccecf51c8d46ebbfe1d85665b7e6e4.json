@@ -1,0 +1,17 @@
+{
+  "question": "Debug test question",
+  "approach": "Debug Test",
+  "execution_time": 0.1,
+  "timestamp": "2025-08-17T21:47:11.857003",
+  "result": {
+    "success": true,
+    "method": "Debug Test",
+    "sql_query": "SELECT 1",
+    "results": [
+      {
+        "result": 1
+      }
+    ],
+    "question": "Debug test question"
+  }
+}

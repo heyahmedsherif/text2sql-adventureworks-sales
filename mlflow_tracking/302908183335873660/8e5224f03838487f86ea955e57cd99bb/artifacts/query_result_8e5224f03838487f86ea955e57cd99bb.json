@@ -1,0 +1,19 @@
+{
+  "question": "Analyze the correlation between customer risk ratings and loan portfolio concentration",
+  "approach": "Pattern Match",
+  "execution_time": 0.011097192764282227,
+  "timestamp": "2025-08-19T22:00:13.772566",
+  "result": {
+    "method": "Pattern Match",
+    "sql_query": "SELECT SUM(CURRENT_PRINCIPAL_BALANCE) as total_balance FROM CL_DETAIL_FACT WHERE CURRENT_PRINCIPAL_BALANCE > 0",
+    "results": [
+      {
+        "total_balance": 80943003824.1
+      }
+    ],
+    "success": true,
+    "explanation": "Matched pattern 'loan portfolio'",
+    "processing_time": 0.011097192764282227,
+    "question": "Analyze the correlation between customer risk ratings and loan portfolio concentration"
+  }
+}

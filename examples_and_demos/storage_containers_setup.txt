@@ -1,0 +1,35 @@
+
+📋 REQUIRED STORAGE CONTAINERS:
+
+1. 🌐 Open Azure Portal → Storage Account "fisdstoolkit"
+
+2. 📁 Create Containers:
+   • Click "Containers" in left menu
+   • Click "+ Container" for each:
+     
+     Container 1: "documents"
+     - Name: documents
+     - Public access level: Private (no anonymous access)
+     - Purpose: Upload PDF/DOCX/PPTX files here
+     
+     Container 2: "documents-figures" 
+     - Name: documents-figures
+     - Public access level: Private (no anonymous access)
+     - Purpose: Extracted figures/charts saved here
+     
+     Container 3: "rag-documents-index"
+     - Name: rag-documents-index
+     - Public access level: Private (no anonymous access)  
+     - Purpose: AI Search processing artifacts
+
+3. ✅ Verification:
+   • Should see 3 new containers in the list
+   • All should show "Private" access level
+
+💡 ALTERNATIVE - CLI Method:
+If you have proper permissions, run these commands:
+
+az storage container create --account-name fisdstoolkit --name documents --auth-mode login
+az storage container create --account-name fisdstoolkit --name documents-figures --auth-mode login  
+az storage container create --account-name fisdstoolkit --name rag-documents-index --auth-mode login
+    

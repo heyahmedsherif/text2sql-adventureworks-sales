@@ -1,0 +1,19 @@
+{
+  "question": "Provide a comprehensive analysis of our loan amounts and internal portfolio risk ratings",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 6.410353899002075,
+  "timestamp": "2025-08-19T22:59:18.093112",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "response_type": "disambiguation",
+    "clarification_questions": [
+      "Could you clarify which specific loan amounts you would like to analyze? For example, are you interested in total loan amounts, average loan amounts, or loan amounts by specific categories?",
+      "What specific internal portfolio risk ratings are you referring to? Are you looking for a summary of all risk ratings or specific categories of risk ratings?"
+    ],
+    "user_choices": [],
+    "success": true,
+    "explanation": "AutoGen is requesting clarification to provide better analysis",
+    "processing_time": 6.410353899002075,
+    "question": "Provide a comprehensive analysis of our loan amounts and internal portfolio risk ratings"
+  }
+}

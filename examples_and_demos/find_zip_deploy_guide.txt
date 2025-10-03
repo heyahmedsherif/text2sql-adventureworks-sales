@@ -1,0 +1,43 @@
+
+🔍 FINDING THE ZIP DEPLOY OPTION:
+
+📋 METHOD 1: Via Deployment Center (Sometimes Hidden)
+====================================================
+1. Go to your Function App "fisfunctionpoc" in Azure Portal
+2. In the left menu, click "Deployment Center"
+3. Look for tabs at the top of the main area:
+   • You might see: "GitHub", "Azure DevOps", "Local Git", etc.
+   • Look for a tab called "ZIP Deploy" or "External"
+   • If you don't see "ZIP Deploy", try Method 2 below
+
+📋 METHOD 2: Via Advanced Tools (Kudu) - ALWAYS WORKS
+=====================================================
+1. In your Function App, scroll down in the left menu
+2. Find "Advanced Tools" (under Development Tools section)
+3. Click "Advanced Tools" → Click "Go" button
+4. This opens the Kudu console in a new tab
+5. In Kudu, click "Tools" menu → "Zip Push Deploy"
+6. Drag and drop your "image_processing_functions.zip" file
+7. Wait for deployment to complete
+
+📋 METHOD 3: Via Azure CLI (Alternative)
+========================================
+Since we had authentication issues, let's try with run-from-package:
+az functionapp config appsettings set \
+    --resource-group "FIS-Internal" \
+    --name "fisfunctionpoc" \
+    --settings WEBSITE_RUN_FROM_PACKAGE="1"
+
+Then try deployment again.
+
+📋 METHOD 4: Via Development Tools Menu
+=======================================
+1. In your Function App left menu, look for "Development Tools"
+2. Click "App Service Editor" or "Console"
+3. Some Function Apps have deployment options here
+
+📋 VISUAL GUIDE FOR KUDU METHOD:
+================================
+Function App → Advanced Tools → Go → Tools Menu → Zip Push Deploy
+
+This method ALWAYS works and bypasses authentication issues!

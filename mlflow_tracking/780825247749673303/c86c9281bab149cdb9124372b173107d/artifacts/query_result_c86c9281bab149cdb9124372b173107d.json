@@ -1,0 +1,15 @@
+{
+  "question": "What is our total loan portfolio value?",
+  "approach": "AI-Powered",
+  "execution_time": 0.818612813949585,
+  "timestamp": "2025-10-03T13:52:50.477355",
+  "result": {
+    "method": "AI-Powered",
+    "sql_query": null,
+    "results": null,
+    "success": false,
+    "error": "no such table: CL_DETAIL_FACT",
+    "processing_time": 0.818612813949585,
+    "question": "What is our total loan portfolio value?"
+  }
+}

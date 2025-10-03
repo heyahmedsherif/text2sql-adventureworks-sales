@@ -1,0 +1,19 @@
+{
+  "question": "How many customers do we have?",
+  "approach": "Pattern Match",
+  "execution_time": 0.0028171539306640625,
+  "timestamp": "2025-08-17T21:35:56.114682",
+  "result": {
+    "method": "Pattern Match",
+    "sql_query": "SELECT COUNT(*) as customer_count FROM CUSTOMER_DIMENSION",
+    "results": [
+      {
+        "customer_count": 4449
+      }
+    ],
+    "success": true,
+    "explanation": "Matched pattern 'how many customers'",
+    "processing_time": 0.0028171539306640625,
+    "question": "How many customers do we have?"
+  }
+}

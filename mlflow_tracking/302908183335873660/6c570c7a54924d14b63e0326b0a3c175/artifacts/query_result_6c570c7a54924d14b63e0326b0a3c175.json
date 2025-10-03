@@ -1,0 +1,16 @@
+{
+  "question": "Show me the top 5 customers by loan balance",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 19.68740677833557,
+  "timestamp": "2025-08-19T14:05:40.523865",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "answer": "payload_type=<PayloadType.ANSWER_WITH_SOURCES: 'answer_with_sources'> payload_source=<PayloadSource.ASSISTANT: 'assistant'> body=Body(answer='It appears that there are currently no customers with a loan balance in the database. Therefore, I cannot provide a list of the top 5 customers by loan balance at this time.', steps=[['Show me the top 5 customers by loan balance.']], sources=[], follow_up_suggestions=['What are the total loan balances for all customers?', 'Can you provide a list of customers with any loan balances?', 'What is the average loan balance among customers?'])",
+    "sql_query": null,
+    "results": null,
+    "success": true,
+    "explanation": "AutoGen processing completed",
+    "processing_time": 19.68740677833557,
+    "question": "Show me the top 5 customers by loan balance"
+  }
+}

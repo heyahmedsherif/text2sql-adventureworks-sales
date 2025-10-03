@@ -1,0 +1,16 @@
+{
+  "question": "Identify trends in customer risk assessment showing concerning patterns across different rating sources",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 5.63569188117981,
+  "timestamp": "2025-08-19T22:08:41.658830",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "answer": "payload_type=<PayloadType.DISAMBIGUATION_REQUESTS: 'disambiguation_requests'> payload_source=<PayloadSource.ASSISTANT: 'assistant'> body=Body(disambiguation_requests=[DismabiguationRequest(assistant_question='Could you clarify which specific rating sources you are referring to for the customer risk assessment trends?', user_choices=[]), DismabiguationRequest(assistant_question='What specific patterns are you looking to identify in the customer risk assessment?', user_choices=[])], steps=[['Identify trends in customer risk assessment showing concerning patterns across different rating sources.']])",
+    "sql_query": null,
+    "results": null,
+    "success": true,
+    "explanation": "AutoGen processing completed",
+    "processing_time": 5.63569188117981,
+    "question": "Identify trends in customer risk assessment showing concerning patterns across different rating sources"
+  }
+}

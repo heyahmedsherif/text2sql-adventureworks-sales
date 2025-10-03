@@ -1,0 +1,16 @@
+{
+  "question": "How many customers do we have",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 11.212527990341187,
+  "timestamp": "2025-08-19T14:03:02.098760",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "answer": "payload_type=<PayloadType.ANSWER_WITH_SOURCES: 'answer_with_sources'> payload_source=<PayloadSource.ASSISTANT: 'assistant'> body=Body(answer='As of the latest data, we have a total of **4,449 customers**.', steps=[['How many customers do we have?']], sources=[Source(sql_query='SELECT COUNT(*) AS total_customers FROM customer_dimension LIMIT 100', sql_rows=[{'total_customers': 4449}])], follow_up_suggestions=['What is the breakdown of customers by account type?', 'How many new customers were added in the last month?', 'What is the average account balance of our customers?'])",
+    "sql_query": null,
+    "results": null,
+    "success": true,
+    "explanation": "AutoGen processing completed",
+    "processing_time": 11.212527990341187,
+    "question": "How many customers do we have"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "question": "Analyze customer risk assessment trends and identify concerning patterns",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 6.033459901809692,
+  "timestamp": "2025-08-19T23:14:05.689711",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "response_type": "disambiguation",
+    "clarification_questions": [
+      "Could you clarify what specific trends or patterns you are looking to analyze in the customer risk assessment? For example, are you interested in specific risk ratings, dates, or customer types?"
+    ],
+    "user_choices": [],
+    "success": true,
+    "explanation": "AutoGen is requesting clarification to provide better analysis",
+    "processing_time": 6.033459901809692,
+    "question": "Analyze customer risk assessment trends and identify concerning patterns"
+  }
+}

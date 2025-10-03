@@ -1,0 +1,15 @@
+{
+  "question": "What's our loan portfolio size?",
+  "approach": "AI-Powered",
+  "execution_time": 0.6426990032196045,
+  "timestamp": "2025-10-03T13:45:24.147004",
+  "result": {
+    "method": "AI-Powered",
+    "sql_query": null,
+    "results": null,
+    "success": false,
+    "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CTkgVrWWg7CAUNbbTv4K4'}",
+    "processing_time": 0.6426990032196045,
+    "question": "What's our loan portfolio size?"
+  }
+}

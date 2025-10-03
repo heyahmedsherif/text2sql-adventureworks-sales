@@ -1,0 +1,18 @@
+{
+  "question": "Identify trends in customer risk assessment showing concerning patterns across different rating sources",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 6.077426910400391,
+  "timestamp": "2025-08-19T22:43:08.746738",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "response_type": "disambiguation",
+    "clarification_questions": [
+      "Could you clarify which specific rating sources you are referring to for the customer risk assessment trends?"
+    ],
+    "user_choices": [],
+    "success": true,
+    "explanation": "AutoGen is requesting clarification to provide better analysis",
+    "processing_time": 6.077426910400391,
+    "question": "Identify trends in customer risk assessment showing concerning patterns across different rating sources"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "question": "Show me the top 5 customers by loan balance",
+  "approach": "AI-Powered (CLAUDE)",
+  "execution_time": 1.5362439155578613,
+  "timestamp": "2025-10-03T13:54:30.137619",
+  "result": {
+    "method": "AI-Powered (CLAUDE)",
+    "sql_query": "SELECT \n  c.CustomerID, \n  c.FirstName, \n  c.LastName, \n  SUM(soh.TotalDue) AS TotalSales\nFROM Customer c\nJOIN SalesOrderHeader soh ON c.CustomerID = soh.CustomerID\nGROUP BY c.CustomerID\nORDER BY TotalSales DESC\nLIMIT 5;",
+    "results": [
+      {
+        "CustomerID": 29736,
+        "FirstName": "Terry",
+        "LastName": "Eminhizer",
+        "TotalSales": 119960.824
+      },
+      {
+        "CustomerID": 30050,
+        "FirstName": "Krishna",
+        "LastName": "Sunkammurali",
+        "TotalSales": 108597.9536
+      },
+      {
+        "CustomerID": 29546,
+        "FirstName": "Christopher",
+        "LastName": "Beck",
+        "TotalSales": 98138.2131
+      },
+      {
+        "CustomerID": 29957,
+        "FirstName": "Kevin",
+        "LastName": "Liu",
+        "TotalSales": 92663.5609
+      },
+      {
+        "CustomerID": 29796,
+        "FirstName": "Jon",
+        "LastName": "Grande",
+        "TotalSales": 86222.8072
+      }
+    ],
+    "success": true,
+    "explanation": "AI-generated SQL using CLAUDE: 'Show me the top 5 customers by loan balance'",
+    "processing_time": 1.5362439155578613,
+    "question": "Show me the top 5 customers by loan balance"
+  }
+}

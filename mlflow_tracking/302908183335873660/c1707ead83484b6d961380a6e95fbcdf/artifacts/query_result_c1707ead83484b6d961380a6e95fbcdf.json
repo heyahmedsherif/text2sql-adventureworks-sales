@@ -1,0 +1,22 @@
+{
+  "question": "Analyze customer risk assessment trends and identify concerning patterns.  Please specify by specific risk ratings for all customer types.  Can you provide it by Customer Type and Risk Count Only?",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 6.694538116455078,
+  "timestamp": "2025-08-19T23:16:36.779005",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "response_type": "disambiguation",
+    "clarification_questions": [
+      "Could you clarify which specific risk ratings you are referring to? Are you looking for 'Line Officer Risk Rating', 'Credit Review Risk Rating', or 'Regulator Risk Rating'?"
+    ],
+    "user_choices": [
+      "Line Officer Risk Rating",
+      "Credit Review Risk Rating",
+      "Regulator Risk Rating"
+    ],
+    "success": true,
+    "explanation": "AutoGen is requesting clarification to provide better analysis",
+    "processing_time": 6.694538116455078,
+    "question": "Analyze customer risk assessment trends and identify concerning patterns.  Please specify by specific risk ratings for all customer types.  Can you provide it by Customer Type and Risk Count Only?"
+  }
+}

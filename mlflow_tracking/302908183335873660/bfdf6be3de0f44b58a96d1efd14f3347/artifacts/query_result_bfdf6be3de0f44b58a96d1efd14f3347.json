@@ -1,0 +1,18 @@
+{
+  "question": "Provide a comprehensive analysis of our loan portfolio risk exposure",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 6.2736499309539795,
+  "timestamp": "2025-08-19T22:58:01.519298",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "response_type": "disambiguation",
+    "clarification_questions": [
+      "Could you clarify what specific aspects of the loan portfolio risk exposure you would like to analyze? For example, are you interested in total loan amounts, risk ratings, or specific customer details?"
+    ],
+    "user_choices": [],
+    "success": true,
+    "explanation": "AutoGen is requesting clarification to provide better analysis",
+    "processing_time": 6.2736499309539795,
+    "question": "Provide a comprehensive analysis of our loan portfolio risk exposure"
+  }
+}

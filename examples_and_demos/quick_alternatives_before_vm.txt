@@ -1,0 +1,33 @@
+
+🚀 BEFORE CREATING A VM, TRY THESE QUICK FIXES:
+
+💡 OPTION 1: Azure Cloud Shell (30 seconds)
+===========================================
+1. In Azure Portal, click Cloud Shell icon (>_) at top
+2. Upload image_processing_functions.zip using upload button
+3. Run: az functionapp deployment source config-zip --resource-group "FIS-Internal" --name "fisfunctionpoc" --src ./image_processing_functions.zip
+
+💡 OPTION 2: Try Different Portal Browser
+=========================================
+• Use Microsoft Edge (best Azure compatibility)
+• Clear all cookies/cache for portal.azure.com
+• Try incognito/private mode
+• Sometimes this reveals hidden deployment options
+
+💡 OPTION 3: VS Code Azure Extension
+====================================
+1. Install VS Code + Azure Functions extension
+2. Sign in to Azure account
+3. Deploy directly from VS Code
+4. This method often bypasses Portal restrictions
+
+💡 OPTION 4: PowerShell with Azure Module
+=========================================
+If you have Windows/PowerShell:
+1. Install-Module -Name Az -Scope CurrentUser
+2. Connect-AzAccount
+3. Use PowerShell deployment commands
+
+🎯 CLOUD SHELL IS FASTEST:
+Cloud Shell runs IN Azure, so it should bypass all authentication issues
+without needing to create a VM. Try this first!

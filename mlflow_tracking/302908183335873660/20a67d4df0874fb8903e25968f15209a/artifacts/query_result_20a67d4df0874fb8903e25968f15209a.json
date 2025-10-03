@@ -1,0 +1,19 @@
+{
+  "question": "What is the total loan?",
+  "approach": "AI-Powered",
+  "execution_time": 1.2958500385284424,
+  "timestamp": "2025-08-19T16:35:58.057977",
+  "result": {
+    "method": "AI-Powered",
+    "sql_query": "SELECT SUM(CURRENT_PRINCIPAL_BALANCE) AS TOTAL_LOAN\nFROM CL_DETAIL_FACT\nWHERE CURRENT_PRINCIPAL_BALANCE > 0;",
+    "results": [
+      {
+        "TOTAL_LOAN": 80943003824.1
+      }
+    ],
+    "success": true,
+    "explanation": "AI-generated SQL for: 'What is the total loan?'",
+    "processing_time": 1.2958500385284424,
+    "question": "What is the total loan?"
+  }
+}

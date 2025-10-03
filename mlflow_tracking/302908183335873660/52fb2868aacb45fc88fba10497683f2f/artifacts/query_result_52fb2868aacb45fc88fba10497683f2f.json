@@ -1,0 +1,16 @@
+{
+  "question": "Test question for feedback",
+  "approach": "Test Method",
+  "execution_time": 0.1,
+  "timestamp": "2025-08-17T21:44:40.016374",
+  "result": {
+    "success": true,
+    "method": "Test Method",
+    "sql_query": "SELECT COUNT(*) FROM test_table",
+    "results": [
+      {
+        "count": 100
+      }
+    ]
+  }
+}

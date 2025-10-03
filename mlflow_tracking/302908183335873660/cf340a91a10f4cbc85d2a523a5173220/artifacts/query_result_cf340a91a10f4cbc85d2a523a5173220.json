@@ -1,0 +1,15 @@
+{
+  "question": "Identify customers showing any signs of potential risk",
+  "approach": "AI-Powered",
+  "execution_time": 4.606799125671387,
+  "timestamp": "2025-08-19T14:12:16.102081",
+  "result": {
+    "method": "AI-Powered",
+    "sql_query": null,
+    "results": null,
+    "success": false,
+    "error": "no such column: C.RISK_RATING",
+    "processing_time": 4.606799125671387,
+    "question": "Identify customers showing any signs of potential risk"
+  }
+}

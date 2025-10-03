@@ -1,0 +1,13 @@
+{
+  "question": "Identify trends in customer loan risk assessment showing concerning patterns across different rating sources",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 33.904536724090576,
+  "timestamp": "2025-08-19T22:44:09.912583",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "success": false,
+    "error": "AutoGen processing failed: 'AnswerWithSourcesPayload' object has no attribute 'answer'",
+    "processing_time": 33.904536724090576,
+    "question": "Identify trends in customer loan risk assessment showing concerning patterns across different rating sources"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "question": "What are the criteria used to classify customers into different risk ratings?",
+  "approach": "Pattern Match",
+  "execution_time": 0.005839824676513672,
+  "timestamp": "2025-08-19T21:51:22.373478",
+  "result": {
+    "method": "Pattern Match",
+    "sql_query": "SELECT OFFICER_RISK_RATING_DESC, COUNT(*) as count \n                     FROM CUSTOMER_DIMENSION \n                     WHERE OFFICER_RISK_RATING_DESC IS NOT NULL \n                     GROUP BY OFFICER_RISK_RATING_DESC \n                     ORDER BY count DESC",
+    "results": [
+      {
+        "OFFICER_RISK_RATING_DESC": "EXCELLENT CREDIT",
+        "count": 1325
+      },
+      {
+        "OFFICER_RISK_RATING_DESC": "EXEMPLARY CREDIT",
+        "count": 967
+      },
+      {
+        "OFFICER_RISK_RATING_DESC": "A STABLE",
+        "count": 809
+      },
+      {
+        "OFFICER_RISK_RATING_DESC": "GOOD CREDIT",
+        "count": 423
+      },
+      {
+        "OFFICER_RISK_RATING_DESC": "STRONG CREDIT",
+        "count": 267
+      },
+      {
+        "OFFICER_RISK_RATING_DESC": "A+ STABLE",
+        "count": 170
+      },
+      {
+        "OFFICER_RISK_RATING_DESC": "FAIR CREDIT",
+        "count": 76
+      },
+      {
+        "OFFICER_RISK_RATING_DESC": "BBB- STABLE",
+        "count": 20
+      },
+      {
+        "OFFICER_RISK_RATING_DESC": "HIGH RISK CREDIT",
+        "count": 10
+      },
+      {
+        "OFFICER_RISK_RATING_DESC": "BB+",
+        "count": 10
+      },
+      {
+        "OFFICER_RISK_RATING_DESC": "A- STABLE",
+        "count": 9
+      }
+    ],
+    "success": true,
+    "explanation": "Matched pattern 'risk rating'",
+    "processing_time": 0.005839824676513672,
+    "question": "What are the criteria used to classify customers into different risk ratings?"
+  }
+}

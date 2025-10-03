@@ -1,0 +1,36 @@
+{
+  "question": "How many customers do we have?",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 12.439494371414185,
+  "timestamp": "2025-08-20T09:17:29.809757",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "response_type": "answer",
+    "answer": "As of the latest data, we have a total of **4,449 customers**.",
+    "sql_query": "SELECT COUNT(*) AS total_customers FROM CUSTOMER_DIMENSION LIMIT 100",
+    "results": [
+      {
+        "total_customers": 4449
+      }
+    ],
+    "follow_up_suggestions": [
+      "What is the breakdown of customers by account type?",
+      "How has the customer count changed over the last year?",
+      "What is the average account balance of our customers?"
+    ],
+    "sources": [
+      {
+        "sql_query": "SELECT COUNT(*) AS total_customers FROM CUSTOMER_DIMENSION LIMIT 100",
+        "sql_rows": [
+          {
+            "total_customers": 4449
+          }
+        ]
+      }
+    ],
+    "success": true,
+    "explanation": "AutoGen multi-agent processing completed",
+    "processing_time": 12.439494371414185,
+    "question": "How many customers do we have?"
+  }
+}

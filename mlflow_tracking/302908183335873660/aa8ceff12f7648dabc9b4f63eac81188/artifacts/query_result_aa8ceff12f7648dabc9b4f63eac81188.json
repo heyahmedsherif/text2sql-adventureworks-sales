@@ -1,0 +1,15 @@
+{
+  "question": "What are the criteria used to classify customers into different risk ratings?",
+  "approach": "AI-Powered",
+  "execution_time": 1.6054558753967285,
+  "timestamp": "2025-08-19T21:51:45.042588",
+  "result": {
+    "method": "AI-Powered",
+    "sql_query": null,
+    "results": null,
+    "success": false,
+    "error": "no such table: RISK_RATING_CRITERIA_TABLE",
+    "processing_time": 1.6054558753967285,
+    "question": "What are the criteria used to classify customers into different risk ratings?"
+  }
+}

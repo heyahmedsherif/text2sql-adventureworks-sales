@@ -1,0 +1,36 @@
+{
+  "question": "Show me the top 5 customers by loan balance",
+  "approach": "AI-Powered",
+  "execution_time": 2.0986039638519287,
+  "timestamp": "2025-08-19T14:04:44.019887",
+  "result": {
+    "method": "AI-Powered",
+    "sql_query": "SELECT \n    C.CUSTOMER_NAME, \n    SUM(CL.CURRENT_PRINCIPAL_BALANCE) AS TOTAL_LOAN_BALANCE\nFROM \n    CUSTOMER_DIMENSION C\nJOIN \n    CL_DETAIL_FACT CL ON C.CUSTOMER_KEY = CL.CUSTOMER_KEY\nWHERE \n    CL.CURRENT_PRINCIPAL_BALANCE > 0\nGROUP BY \n    C.CUSTOMER_NAME\nORDER BY \n    TOTAL_LOAN_BALANCE DESC\nLIMIT 5;",
+    "results": [
+      {
+        "CUSTOMER_NAME": "BORROWER 1",
+        "TOTAL_LOAN_BALANCE": 10062500000.0
+      },
+      {
+        "CUSTOMER_NAME": "R2D2 LLC",
+        "TOTAL_LOAN_BALANCE": 8372496537.7
+      },
+      {
+        "CUSTOMER_NAME": "PS CUSTOMER 1",
+        "TOTAL_LOAN_BALANCE": 4913723117.53
+      },
+      {
+        "CUSTOMER_NAME": "TEST CLIENT LIMITED",
+        "TOTAL_LOAN_BALANCE": 3800000000.0
+      },
+      {
+        "CUSTOMER_NAME": "TC MISC TESTING",
+        "TOTAL_LOAN_BALANCE": 3772762883.66
+      }
+    ],
+    "success": true,
+    "explanation": "AI-generated SQL for: 'Show me the top 5 customers by loan balance'",
+    "processing_time": 2.0986039638519287,
+    "question": "Show me the top 5 customers by loan balance"
+  }
+}

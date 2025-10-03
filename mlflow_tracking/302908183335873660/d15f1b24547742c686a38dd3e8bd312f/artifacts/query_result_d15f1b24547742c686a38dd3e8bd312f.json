@@ -1,0 +1,19 @@
+{
+  "question": "How many customers do we have?",
+  "approach": "AI-Powered",
+  "execution_time": 1.5734939575195312,
+  "timestamp": "2025-08-19T10:22:11.336987",
+  "result": {
+    "method": "AI-Powered",
+    "sql_query": "SELECT COUNT(*) AS total_customers\nFROM CUSTOMER_DIMENSION;",
+    "results": [
+      {
+        "total_customers": 4449
+      }
+    ],
+    "success": true,
+    "explanation": "AI-generated SQL for: 'How many customers do we have?'",
+    "processing_time": 1.5734939575195312,
+    "question": "How many customers do we have?"
+  }
+}

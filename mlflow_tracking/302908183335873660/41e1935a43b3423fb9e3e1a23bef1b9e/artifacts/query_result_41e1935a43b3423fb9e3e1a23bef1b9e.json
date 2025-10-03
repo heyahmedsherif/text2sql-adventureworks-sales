@@ -1,0 +1,96 @@
+{
+  "question": "What are the total loan balances for all customers?",
+  "approach": "AI-Powered",
+  "execution_time": 2.824359893798828,
+  "timestamp": "2025-08-19T14:06:35.741340",
+  "result": {
+    "method": "AI-Powered",
+    "sql_query": "SELECT \n    C.CUSTOMER_NAME,\n    SUM(CL.CURRENT_PRINCIPAL_BALANCE) AS TOTAL_LOAN_BALANCE\nFROM \n    CUSTOMER_DIMENSION C\nJOIN \n    CL_DETAIL_FACT CL ON C.CUSTOMER_KEY = CL.CUSTOMER_KEY\nWHERE \n    CL.CURRENT_PRINCIPAL_BALANCE > 0\nGROUP BY \n    C.CUSTOMER_NAME\nORDER BY \n    TOTAL_LOAN_BALANCE DESC\nLIMIT 20;",
+    "results": [
+      {
+        "CUSTOMER_NAME": "BORROWER 1",
+        "TOTAL_LOAN_BALANCE": 10062500000.0
+      },
+      {
+        "CUSTOMER_NAME": "R2D2 LLC",
+        "TOTAL_LOAN_BALANCE": 8372496537.7
+      },
+      {
+        "CUSTOMER_NAME": "PS CUSTOMER 1",
+        "TOTAL_LOAN_BALANCE": 4913723117.53
+      },
+      {
+        "CUSTOMER_NAME": "TEST CLIENT LIMITED",
+        "TOTAL_LOAN_BALANCE": 3800000000.0
+      },
+      {
+        "CUSTOMER_NAME": "TC MISC TESTING",
+        "TOTAL_LOAN_BALANCE": 3772762883.66
+      },
+      {
+        "CUSTOMER_NAME": "CA TEST 2",
+        "TOTAL_LOAN_BALANCE": 3710095315.4
+      },
+      {
+        "CUSTOMER_NAME": "TEST CUSTOMER SYN",
+        "TOTAL_LOAN_BALANCE": 3450000000
+      },
+      {
+        "CUSTOMER_NAME": "CUSTOMER B SYN",
+        "TOTAL_LOAN_BALANCE": 3443000000
+      },
+      {
+        "CUSTOMER_NAME": "OVERSEAS BUYER - BC",
+        "TOTAL_LOAN_BALANCE": 3351000000
+      },
+      {
+        "CUSTOMER_NAME": "B1",
+        "TOTAL_LOAN_BALANCE": 3300000000.0
+      },
+      {
+        "CUSTOMER_NAME": "FIRST SOLAR",
+        "TOTAL_LOAN_BALANCE": 1996469418.9
+      },
+      {
+        "CUSTOMER_NAME": "AGAVE CORP",
+        "TOTAL_LOAN_BALANCE": 1936980000
+      },
+      {
+        "CUSTOMER_NAME": "TESTAR INC",
+        "TOTAL_LOAN_BALANCE": 1574125000
+      },
+      {
+        "CUSTOMER_NAME": "RED BULL RACING",
+        "TOTAL_LOAN_BALANCE": 1480155935.3
+      },
+      {
+        "CUSTOMER_NAME": "SINDI & KATE CO. INC",
+        "TOTAL_LOAN_BALANCE": 1470000000
+      },
+      {
+        "CUSTOMER_NAME": "DNB TEST 1",
+        "TOTAL_LOAN_BALANCE": 1468866667.5
+      },
+      {
+        "CUSTOMER_NAME": "PE S3 SPCLIENT CO",
+        "TOTAL_LOAN_BALANCE": 1350000000
+      },
+      {
+        "CUSTOMER_NAME": "DISCOVERY LIMITED",
+        "TOTAL_LOAN_BALANCE": 1346254594.4
+      },
+      {
+        "CUSTOMER_NAME": "PS CUSTOMER 2",
+        "TOTAL_LOAN_BALANCE": 1277859698.44
+      },
+      {
+        "CUSTOMER_NAME": "FRC INVESTMENT LLC",
+        "TOTAL_LOAN_BALANCE": 1276840588.0
+      }
+    ],
+    "success": true,
+    "explanation": "AI-generated SQL for: 'What are the total loan balances for all customers?'",
+    "processing_time": 2.824359893798828,
+    "question": "What are the total loan balances for all customers?"
+  }
+}

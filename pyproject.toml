@@ -1,0 +1,31 @@
+[project]
+name = "dstoolkit-text2sql-and-imageprocessing"
+version = "0.2.0"
+description = "This repo accelerates development of RAG applications with rich data sources including SQL Warehouses and documents analysed with Azure Document Intelligence."
+readme = "README.md"
+requires-python = ">=3.11"
+
+[dependency-groups]
+dev = [
+    "black>=24.10.0",
+    "ipykernel>=6.29.5",
+    "jupyter>=1.1.1",
+    "pre-commit>=4.0.1",
+    "pygments>=2.18.0",
+    "ruff>=0.8.1",
+    "python-dotenv>=1.0.1",
+    "coverage>=7.6.12",
+    "pytest>=8.3.4",
+    "pytest-asyncio>=0.25.3",
+    "pytest-cov>=6.0.0",
+    "pytest-mock>=3.14.0",
+]
+
+[tool.uv.workspace]
+members = ["text_2_sql/text_2_sql_core", "text_2_sql/autogen", "deploy_ai_search_indexes", "image_processing"]
+
+[tool.uv.sources]
+text_2_sql_core = { workspace = true }
+autogen_text_2_sql = { workspace = true }
+deploy_ai_search_indexes = { workspace = true }
+image_processing = { workspace = true }

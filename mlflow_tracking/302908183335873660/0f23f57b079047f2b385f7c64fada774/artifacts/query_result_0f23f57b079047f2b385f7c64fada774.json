@@ -1,0 +1,19 @@
+{
+  "question": "What is the total loan by customer?",
+  "approach": "Pattern Match",
+  "execution_time": 0.005177736282348633,
+  "timestamp": "2025-08-19T16:36:16.259788",
+  "result": {
+    "method": "Pattern Match",
+    "sql_query": "SELECT SUM(CURRENT_PRINCIPAL_BALANCE) as total_balance FROM CL_DETAIL_FACT WHERE CURRENT_PRINCIPAL_BALANCE > 0",
+    "results": [
+      {
+        "total_balance": 80943003824.1
+      }
+    ],
+    "success": true,
+    "explanation": "Matched pattern 'total loan'",
+    "processing_time": 0.005177736282348633,
+    "question": "What is the total loan by customer?"
+  }
+}

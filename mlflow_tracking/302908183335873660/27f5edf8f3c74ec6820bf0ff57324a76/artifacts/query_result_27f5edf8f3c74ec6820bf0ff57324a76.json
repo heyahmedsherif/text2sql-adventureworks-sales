@@ -1,0 +1,16 @@
+{
+  "question": "Analyze the correlation between customer risk ratings and loan portfolio concentration",
+  "approach": "AutoGen Multi-Agent",
+  "execution_time": 6.7200751304626465,
+  "timestamp": "2025-08-19T22:03:28.695998",
+  "result": {
+    "method": "AutoGen Multi-Agent",
+    "answer": "payload_type=<PayloadType.DISAMBIGUATION_REQUESTS: 'disambiguation_requests'> payload_source=<PayloadSource.ASSISTANT: 'assistant'> body=Body(disambiguation_requests=[DismabiguationRequest(assistant_question=\"Could you clarify which specific risk rating you are referring to? We have 'Line Officer Risk Rating', 'Credit Review Risk Rating', and 'Regulator Risk Rating'.\", user_choices=['Line Officer Risk Rating', 'Credit Review Risk Rating', 'Regulator Risk Rating']), DismabiguationRequest(assistant_question=\"What aspect of loan portfolio concentration are you interested in analyzing? For example, are you looking at 'Portfolio ID', 'Portfolio Description', or another metric?\", user_choices=['Portfolio ID', 'Portfolio Description'])], steps=[['Analyze the correlation between customer risk ratings and loan portfolio concentration.']])",
+    "sql_query": null,
+    "results": null,
+    "success": true,
+    "explanation": "AutoGen processing completed",
+    "processing_time": 6.7200751304626465,
+    "question": "Analyze the correlation between customer risk ratings and loan portfolio concentration"
+  }
+}
