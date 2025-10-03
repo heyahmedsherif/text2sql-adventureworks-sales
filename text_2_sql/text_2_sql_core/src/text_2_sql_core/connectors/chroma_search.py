@@ -16,9 +16,23 @@ class ChromaSearchConnector:
 
     def __init__(self):
         self.open_ai_connector = OpenAIConnector()
-        # Initialize ChromaDB client
+        # Initialize ChromaDB client with settings for Streamlit Cloud compatibility
         chroma_path = os.environ.get("CHROMA_DB_PATH", "./chroma_db")
-        self.client = chromadb.PersistentClient(path=chroma_path)
+        try:
+            # Try to use PersistentClient with explicit settings
+            settings = Settings(
+                anonymized_telemetry=False,
+                allow_reset=True,
+                is_persistent=True
+            )
+            self.client = chromadb.PersistentClient(
+                path=chroma_path,
+                settings=settings
+            )
+        except Exception as e:
+            logging.warning(f"Failed to initialize PersistentClient, falling back to Client: {e}")
+            # Fallback to basic Client for compatibility
+            self.client = chromadb.Client(settings=Settings(anonymized_telemetry=False))
 
     def _get_or_create_collection(self, collection_name: str):
         """Get or create a ChromaDB collection"""
